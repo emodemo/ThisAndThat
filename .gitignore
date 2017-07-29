@@ -2,7 +2,11 @@
 # Emo
 # =========================
 .metadata/
+.recommenders/
 algs/
+kdtest/
+*/bin/.*
+.*
 
 # =========================
 # Github
@@ -71,3 +75,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/hackerransk-scala/
+/Test/
