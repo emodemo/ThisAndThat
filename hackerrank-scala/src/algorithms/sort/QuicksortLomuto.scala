@@ -3,7 +3,7 @@ package algorithms.sort
 import scala.io.StdIn
 import scala.util.Random
 
-object QuicksortLomuto {
+object QuickSortLomuto {
   def main(args: Array[String]){
      
      val length = StdIn.readInt()

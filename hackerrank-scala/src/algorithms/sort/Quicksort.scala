@@ -3,7 +3,7 @@ package algorithms.sort
 import scala.io.StdIn
 import scala.util.Random
 
-object Quicksort {
+object QuickSort {
   
    def main(args: Array[String]){
      
