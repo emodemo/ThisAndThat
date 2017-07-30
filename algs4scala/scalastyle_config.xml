@@ -6,26 +6,7 @@
    <parameter name="maxFileLength"><![CDATA[800]]></parameter>
   </parameters>
  </check>
- <check class="org.scalastyle.file.HeaderMatchesChecker" level="warning" enabled="true">
-  <parameters>
-   <parameter name="header"><![CDATA[/**
- *  Copyright (C) Emiliyan Todorov.
- *
- *  This program is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful, but 
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */]]></parameter>
-  </parameters>
- </check>
+ <check class="org.scalastyle.file.HeaderMatchesChecker" level="warning" enabled="false"></check>
  <check class="org.scalastyle.scalariform.SpacesAfterPlusChecker" level="warning" enabled="true"></check>
  <check class="org.scalastyle.file.WhitespaceEndOfLineChecker" level="warning" enabled="true"></check>
  <check class="org.scalastyle.scalariform.SpacesBeforePlusChecker" level="warning" enabled="true"></check>

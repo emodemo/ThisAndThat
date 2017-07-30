@@ -1,19 +1,28 @@
-package com.algs4scala.datastructures
+package com.algs4scala.graph
 
 import scala.collection.mutable.ListBuffer
-import scala.collection.mutable.Queue
 
-class GraphBFS(graph: Graph) {
+/**
+ * Depth-First Search on graph
+ * @param graph to surch in
+ */
+class GraphDFS(graph: Graph) {
 
   // 1 - traverse the graph starting from a given node
   // 2 - if the destination node was there, start from it,
   // go thru its parents until the start node is reached
-  def bfsPath(from: Int, to: Int): List[Int] = {
+  /**
+   * DFS
+   * @param from from
+   * @param to to
+   * @return path from to
+   */
+  def dfsPath(from: Int, to: Int): List[Int] = {
     val visited = Array.ofDim[Boolean](graph.size)
     val parentOnPath = Array.ofDim[Int](graph.size)
     val buff = ListBuffer[Int]()
     // 1
-    bfs(from, visited, parentOnPath)
+    dfs(from, visited, parentOnPath)
     // 2
     if(!visited(to)){
       buff.toList
@@ -30,20 +39,13 @@ class GraphBFS(graph: Graph) {
   }
 
   // traverse the graph starting from a given node
-  private def bfs(node: Int, visited: Array[Boolean], parentOnPath: Array[Int]): Unit = {
-    val queue = Queue[Int]()
-    queue.enqueue(node)
+  private def dfs(node: Int, visited: Array[Boolean], parentOnPath: Array[Int]): Unit = {
     visited(node) = true
-    while(! queue.isEmpty){
-      val tmpNode = queue.dequeue
-      graph.adj(tmpNode).foreach(adjNode => {
+    graph.adjNodes(node).foreach(adjNode => {
       if(!visited(adjNode)){
-        parentOnPath(adjNode) = tmpNode
-        visited(adjNode) = true
-        queue.enqueue(adjNode)
+        parentOnPath(adjNode) = node
+        dfs(adjNode, visited, parentOnPath)
       }
     })
-    }
   }
-
 }

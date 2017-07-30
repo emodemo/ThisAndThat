@@ -1,39 +1,42 @@
 package com.algs4scala.sort
 
+/** */
 object MergeSort {
-  
+
+  /**
+   * Merge sort
+   * @tparam T the type of the data to sort
+   * @param data to sort
+   * @param ordering the sorting function
+   * @return sorted data
+   */
   def sort[T](data: List[T])(implicit ordering: Ordering[T]): List[T] = {
     data match {
       case Nil => Nil
       case head :: tail => {
         val middle = data.length / 2
-        if(middle == 0) { 
+        if (middle == 0) {
           data
-        }
-        else {
+        } else {
           val (first, second) = data.splitAt(middle)
           merge(sort(first)(ordering), sort(second)(ordering))
         }
       }
     }
   }
-  
-  private def merge[T](left: List[T], right: List[T])(implicit ordering: Ordering[T]) : List[T] = {
+
+  private def merge[T](left: List[T], right: List[T])(implicit ordering: Ordering[T]): List[T] = {
     (left, right) match {
       case (Nil, Nil) => Nil
-      case (Nil, _) => right
-      case (_, Nil) => left
+      case (Nil, _)   => right
+      case (_, Nil)   => left
       case (leftHead :: leftTail, rightHead :: rightTail) => {
-        if(ordering.lt(leftHead, rightHead)) {
+        if (ordering.lt(leftHead, rightHead)) {
           leftHead :: merge(leftTail, right)(ordering)
-        }
-        else {
+        } else {
           rightHead :: merge(left, rightTail)(ordering)
         }
       }
     }
   }
-  
-  
- 
 }
