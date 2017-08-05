@@ -81,12 +81,4 @@ class Graph(val size: Int) {
     }
   }
 
-  /**
-   * @param from from
-   * @param to to
-   * @param weight weight
-   */
-  class Edge(val from: Int, val to: Int, val weight: Double){
-    override def toString(): String =  from + " - " + to + " : " + weight
-  }
 }

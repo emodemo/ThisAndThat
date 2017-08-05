@@ -7,12 +7,12 @@ import scala.collection.mutable.Stack
  * Topological on graph
  * @param graph to surch in
  */
-class GraphTopologicalSort(graph: Graph) {
+class TopologicalSort(graph: Graph) {
 
-  val preOrder = Queue[Int]()
-  val inOrder = Queue[Int]()
-  val postOrder = Queue[Int]()
-  val revrsePostOrder = Stack[Int]()
+  private val preOrder = Queue[Int]()
+  private val inOrder = Queue[Int]()
+  private val postOrder = Queue[Int]()
+  private val revrsePostOrder = Stack[Int]()
 
   /**
    * @return sorted graph
