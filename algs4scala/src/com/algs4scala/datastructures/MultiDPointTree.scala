@@ -95,31 +95,35 @@ class MultiDPointTree[T, V](implicit ordering: Ordering[T]) {
     for (n <- 0 until nodes.length) {
       breakable {
         // must do the flips on each node check
-        for (d <- 0 until box.length) {
-          if (n != 0) {
-            if (d == 0) {
-              if (flips(d)) flips(d) = false
-              else flips(d) = true
-            } else {
-              if ((n / Math.pow(2, d)) % 1 == 0) {
-                if (flips(d)) flips(d) = false
-                else flips(d) = true
-              }
-            }
-          }
+        for (b <- 0 until box.length) {
+          doFlips(n, b, flips)
         }
         // case node is null "continue to next one"
         if (nodes(n) == null) break
         // check if box is eligible
-        for (d <- 0 until box.length) {
-          if (!flips(d) && ordering.lt(node.key(d), box(d)(0))) break
-          else if (flips(d) && ordering.gt(node.key(d), box(d)(1))) break
+        for (b <- 0 until box.length) {
+          if (!flips(b) && ordering.lt(node.key(b), box(b)(0))) break
+          else if (flips(b) && ordering.gt(node.key(b), box(b)(1))) break
         }
         // add node for further search
         result += n
       }
     }
     result.toArray
+  }
+
+  private def doFlips(nodeN: Int, boxN: Int, flips: Array[Boolean]) = {
+    if (nodeN != 0) {
+      if (boxN == 0) {
+        if (flips(boxN)) flips(boxN) = false
+        else flips(boxN) = true
+      } else {
+        if ((nodeN / Math.pow(2, boxN)) % 1 == 0) {
+          if (flips(boxN)) flips(boxN) = false
+          else flips(boxN) = true
+        }
+      }
+    }
   }
 
   def delete(key: Array[T]): Unit = {
