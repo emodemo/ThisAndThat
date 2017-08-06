@@ -28,4 +28,8 @@ class IndexedPriorityQueue[Т](implicit ordering: Ordering[Т]) {
   def isEmpty(): Boolean = {
     map.isEmpty
   }
+
+  def clear() = {
+    map.clear()
+  }
 }
