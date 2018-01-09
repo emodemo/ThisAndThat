@@ -1,14 +1,11 @@
 package codefights.practice;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 import java.util.Set;
 
 public class CommonTechniques {
 
+	
 	boolean containsDuplicates(int[] a) {
 		Set<Integer> dup = new HashSet<Integer>();
 		for (int i : a) {
@@ -38,30 +35,37 @@ public class CommonTechniques {
 		}
 		return false;
 	}
-
-	int[] traverseTree(Tree<Integer> t) {
-		if(t == null) return new int[]{};
-		List<Integer> result = new ArrayList<>();
-		Queue<Tree<Integer>> q = new LinkedList<>();
-		q.add(t);
-		while (!q.isEmpty()) {
-			Tree<Integer> tmp = q.poll();
-			result.add(tmp.value);
-			if(tmp.left != null) q.add(tmp.left);
-			if(tmp.right != null) q.add(tmp.right);
+	
+	int sumInRange(int[] nums, int[][] queries) {
+		long[] sums = new long[nums.length + 1];
+		sums[0] = 0;
+		long sum = 0;
+		for(int i = 1; i < nums.length + 1; i++){
+			sums[i] = sums[i-1] + nums[i-1];
 		}
-		int[] i = new int[result.size()];
-		int index = 0;
-		for(Integer j : result){
-			i[index] = j;
-			index++;
+		for(int i = 0; i < queries.length; i++){
+			int b = queries[i][1] + 1;
+			int a = queries[i][0];
+			sum += sums[b] - sums[a]; 
 		}
-		return i;
+		return (int) Math.floorMod(sum,1000000007);
 	}
-
-	private class Tree<T> {
-		T value;
-		Tree<T> left;
-		Tree<T> right;
+	
+	int arrayMaxConsecutiveSum2(int[] inputArray) {
+		int sum = 0,
+			minSum = 0,
+			result = inputArray[0];
+	
+		for (int i = 0; i < inputArray.length; i++) {
+			sum += inputArray[i];
+			if (sum - minSum > result) {
+				result =  sum - minSum;
+			}
+			if (sum < minSum) {
+				minSum = sum;
+			}
+		}
+		return result;
 	}
+	
 }
