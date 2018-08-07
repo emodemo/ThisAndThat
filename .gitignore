@@ -1,12 +1,21 @@
 # =========================
 # Emo
 # =========================
-.metadata/
 .recommenders/
-algs/
-kdtest/
-*/bin/.*
 .*
+# produced from eclipse
+.metadata/
+*/bin/.*
+# produced from gradle
+.gradle/
+**/build/
+# produced from sbt
+**/project/
+**/target/
+# produced from intellij
+*.iml
+# produced from vscode
+*/.vscode
 
 # =========================
 # Github

@@ -47,4 +47,32 @@ public class EdgeOfOcean {
 		rest -= min2_10*9;
 		return 1 + 9 + (rest / min11);  
 	}
+	
+	boolean almostIncreasingSequence(int[] sequence) {
+		int error = 0;
+		for(int i = 1; i < sequence.length; i++){
+			if(sequence[i] <= sequence[i-1]){
+			error ++;
+				if(i > 1 && i < sequence.length -1 && sequence[i+1] <= sequence[i-1] && sequence[i] <= sequence[i-2]){
+					error++;
+				}
+			}
+			if(error > 1) return false;
+		}
+		return true;
+	}
+	
+	int matrixElementsSum(int[][] matrix) {
+	    int sum = 0;
+	    for(int col = 0; col < matrix[0].length; col++) {
+	    	for(int r = 0; r < matrix.length; r++) {
+	    		int tmp = matrix[r][col];
+	    		if(tmp == 0) {
+	    			break;
+	    		}else sum += tmp;
+	    	}
+	    }
+	    
+	    return sum;   
+	}
 }
