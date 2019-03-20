@@ -1,0 +1,122 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "CloudFormation stack for creating a user",
+    "Parameters": {
+        "userName": {
+            "Type": "String",
+            "AllowedPattern": "[\\w+=,.@-]+"
+        }
+    },
+    "Resources": {
+        "TutorialUser": {
+            "Type": "AWS::IAM::User",
+            "Properties": {
+                "UserName": {
+                    "Ref": "userName"
+                },
+                "LoginProfile": {
+                    "Password": "pass123",
+                    "PasswordResetRequired": true
+                },
+                "ManagedPolicyArns": [
+                    "arn:aws:iam::aws:policy/AmazonAPIGatewayAdministrator",
+                    "arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess",
+                    "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess",
+                    "arn:aws:iam::aws:policy/AmazonS3FullAccess",
+                    "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess",
+                    "arn:aws:iam::aws:policy/AWSCodeCommitFullAccess",
+                    "arn:aws:iam::aws:policy/AWSCodePipelineFullAccess",
+                    "arn:aws:iam::aws:policy/AWSCodeDeployFullAccess",
+                    "arn:aws:iam::aws:policy/AWSLambdaFullAccess",
+                    "arn:aws:iam::aws:policy/CloudWatchFullAccess"
+                ],
+                "Policies": [
+                    {
+                        "PolicyName": "cloudformation_inline_policy",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "cloudformation:CancelUpdateStack",
+                                        "cloudformation:CreateChangeSet",
+                                        "cloudformation:CreateStack",
+                                        "cloudformation:CreateStackInstances",
+                                        "cloudformation:CreateStackSet",
+                                        "cloudformation:CreateUploadBucket",
+                                        "cloudformation:ContinueUpdateRollback",
+                                        "cloudformation:DeleteChangeSet",
+                                        "cloudformation:DeleteStack",
+                                        "cloudformation:DeleteStackInstances",
+                                        "cloudformation:DeleteStackSet",
+                                        "cloudformation:Describe*",
+                                        "cloudformation:EstimateTemplateCost",
+                                        "cloudformation:ExecuteChangeSet",
+                                        "cloudformation:Get*",
+                                        "cloudformation:List*",
+                                        "cloudformation:SignalResource",
+                                        "cloudformation:StopStackSetOperation",
+                                        "cloudformation:UpdateStack",
+                                        "cloudformation:UpdateStackInstances",
+                                        "cloudformation:UpdateStackSet",
+                                        "cloudformation:UpdateTerminationProtection",
+                                        "cloudformation:ValidateTemplate"
+                                    ],
+                                    "Resource": "*"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "PolicyName": "iam_inline_policy",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [
+                                {
+                                    "Action": [
+                                        "iam:AddRoleToInstanceProfile",
+                                        "iam:AttachRolePolicy",
+                                        "iam:CreateAccessKey",
+                                        "iam:CreateInstanceProfile",
+                                        "iam:CreatePolicy",
+                                        "iam:CreatePolicyVersion",
+                                        "iam:CreateRole",
+                                        "iam:DeletePolicyVersion",
+                                        "iam:DeleteRole",
+                                        "iam:DeleteRolePolicy",
+                                        "iam:DetachRolePolicy",
+                                        "iam:GetRole",
+                                        "iam:ListAttachedRolePolicies",
+                                        "iam:ListPolicies",
+                                        "iam:ListRoles",
+                                        "iam:PassRole",
+                                        "iam:PutRolePolicy",
+                                        "iam:UpdateAssumeRolePolicy"
+                                    ],
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Action": [
+                                        "logs:DeleteLogGroup",
+                                        "logs:GetLogEvents"
+                                    ],
+                                    "Effect": "Allow",
+                                    "Resource": "arn:aws:logs:*:*:log-group:/aws/codebuild/*:log-stream:*"
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "ssm:PutParameter"
+                                    ],
+                                    "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
