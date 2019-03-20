@@ -2,9 +2,12 @@
 # Emo
 # =========================
 .recommenders/
-.*
+.gitattributes
+.classpath
+.project
 # produced from eclipse
 .metadata/
+.settings/
 */bin/.*
 # produced from gradle
 .gradle/
@@ -14,6 +17,7 @@
 **/target/
 # produced from intellij
 *.iml
+.idea/
 # produced from vscode
 */.vscode
 
@@ -84,5 +88,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-/hackerransk-scala/
-/Test/
