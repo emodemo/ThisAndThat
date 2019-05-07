@@ -21,6 +21,8 @@ class AssemblyTest extends FunSuite {
   test("decr") {assert(Assembly.decr(2) === 1)}
   test("add") {assert(Assembly.add(3, 2) === 5)}
   test("sub") {assert(Assembly.sub(3, 2) === 1)}
+  test("modulo_a") {assert(Assembly.mod(8,5) === 3)}
+  test("modulo_b") {assert(Assembly.mod(5,2) === 1)}
   test("mul") {assert(Assembly.sub(3, 2) === 1)}
   test("div_ceil") {assert(Assembly.div_ceil(5, 2) === 3)}
   test("div_floor") {assert(Assembly.div_floor(5, 2) === 2)}

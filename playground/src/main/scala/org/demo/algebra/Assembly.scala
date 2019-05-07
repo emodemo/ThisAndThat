@@ -42,6 +42,19 @@ object Assembly {
     for(_ <- 1 to y) { tmpX = decr(tmpX)}
     tmpX
   }
+
+  // while(z >= y) { z -= y }
+  val mod = (x: Int, y: Int) => {
+    var z = x
+    for(_ <- 1 to x) {
+      val go = gte(z, y)
+      for(_ <- 1 to go){
+        z = sub(z, y)
+      }
+    }
+    z
+  }
+
   val mul = (x: Int, y: Int) => {
     var z = zero()
     for(_ <- 1 to x) { z = add(z, y)}
