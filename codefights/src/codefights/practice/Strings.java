@@ -10,40 +10,70 @@ public class Strings {
 		boolean start = true;
 		for (char c : s.toCharArray()) {
 			if (Character.isUpperCase(c)) {
-				if (start) builder.append(c);
-				else builder.append(" ").append(c);
-			} else	builder.append(c);
+				if (start)
+					builder.append(c);
+				else
+					builder.append(" ").append(c);
+			} else
+				builder.append(c);
 			start = false;
 		}
 		return builder.toString().toLowerCase();
 	}
 
-	// LTE exception on the last test, needs a trie
-	int findFirstSubstringOccurrence(String s, String x) {
-		char[] source = s.toCharArray();
-		char[] target = x.toCharArray();
+	// KMP Algorithm for Pattern Searching
+		int strstr(String s, String x) {
+			if (s == null || x == null || s.length() < x.length())
+				return -1;
+			else if (x.isEmpty())
+				return 0;
 
-		int xl = x.length(), sl = s.length();
-		int fi = -1, xi = 0, si = 0;
+			int[] lps = lps(x);
+			int i = 0;
+			int j = 0;
 
-		while (true) {
-			// find matching start char
-			while (source[si] != target[xi]) {
-				si++;
-				if (si == sl) return -1;
+			while (i < s.length()) {
+				if (x.charAt(j) == s.charAt(i)) {
+					i++;
+					j++;
+					if (j == x.length()) {
+						return i - j; // match found. Return location of match
+					}
+				} else {
+					if (j == 0) {
+						i++;
+					} else {
+						j = lps[j - 1]; // backtrack j to check previous matching prefix
+					}
+				}
 			}
-			// check the rest of the target
-			fi = si;
-			while (source[si] == target[xi]) {
-				xi++;
-				si++;
-				if (xi == xl) return fi;
-				if (si == sl) return -1;
-			}
-			// if not found => reset the target and continue
-			fi = -1;
-			xi = 0;
+
+			return -1;
 		}
+
+	
+	private int[] lps(String str) {
+		int[] lps = new int[str.length()];
+		lps[0] = 0;
+		int i = 1;
+		int j = 0;
+
+		while (i < str.length()) {
+			if (str.charAt(i) == str.charAt(j)) {
+				j++;
+				lps[i] = j;
+				i++;
+			} else { // mismatch
+				if (j == 0) { // go to next char
+					lps[i] = 0;
+					i++;
+				} else { // backtrack j to check previous matching prefix
+					j = lps[j - 1];
+				}
+			}
+		}
+		return lps;
 	}
 
+	
 }

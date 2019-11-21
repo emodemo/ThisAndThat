@@ -1,0 +1,6 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+COPY *.jar /home/emo/
+ENV LOADER_PATH /home/emo/mfcobol.jar,/home/emo/mfcobolrts.jar,/home/emo/LoanAmort.jar
+ENTRYPOINT ["java","-cp","/home/emo/LoanAmortRest-0.0.1-SNAPSHOT.jar", "org.springframework.boot.loader.PropertiesLauncher"]
+# java -cp $PWD/home/emo/LoanAmortRest-0.0.1-SNAPSHOT.jar org.springframework.boot.loader.PropertiesLauncher

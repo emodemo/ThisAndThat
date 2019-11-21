@@ -1,0 +1,36 @@
+# apiVersion: extensions/v1beta1
+# apiVersion: apps/v1
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: loanamort-deployment
+  #labels:
+  #  app: loanamort-service
+  namespace: default
+spec:
+  replicas: 3 # copies of each POD
+  selector:
+    matchLabels:
+      app: loanamort-app # defined in the POD
+  strategy: # POD updatestrategy
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template: # defines the POD, instead of using separate pod.yml
+    metadata:
+      labels:
+        # this label is used by the Service and the Deployment
+        app: loanamort-app
+    spec:
+      containers:
+      - name: loanamort-service-container
+        image: 040339284706.dkr.ecr.us-east-1.amazonaws.com/testecr:loanamort01
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

@@ -1,0 +1,17 @@
+apiVersion: v1
+# access PODs from outside world
+kind: Service
+metadata:
+  name: loanamort-service
+spec:
+  selector:
+    app: loanamort-app # manages PODs having this label (defined in the POD)
+  # configure an ELB to handle incoming traffic to this service
+  # default type is ClusterIP. This exposes the service on a cluster-internal IP,
+  # which will make the service reachable within the cluster only.
+  # aws iam get-role --role-name "AWSServiceRoleForElasticLoadBalancing" || aws iam create-service-linked-role --aws-service-name "elasticloadbalancing.amazonaws.com"
+  type: LoadBalancer
+  ports: # access point of the container
+   -  protocol: TCP
+      port: 8080
+      targetPort: 8080
