@@ -1,4 +1,0 @@
-FROM microfocus/vcdevhub:rhel7_5.0_x64
-WORKDIR /opt/maven
-RUN curl -s http://apache.cbox.biz/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz --output maven.tar.gz && \
-   tar xzf maven.tar.gz
