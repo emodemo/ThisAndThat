@@ -1,23 +1,17 @@
 package tendaysstat
 
 import java.util.Scanner
+
 import scala.collection.mutable.Map
+import scala.io.StdIn
 
-
-/**
- * 
- * https://www.hackerrank.com/challenges/s10-basic-statistics
- * 
- * @author emo
- *
- */
 object day0Averages {
    
-  def main(args: Array[String]){
+  def averages(){
     
     val in = new Scanner(System.in)
 		val vars = Array.ofDim[Double](in.nextInt())
-		for(i <- 0 until vars.length){
+		for(i <- vars.indices){
 		  vars(i) = in.nextDouble()
 		}
     
@@ -26,9 +20,22 @@ object day0Averages {
 		println(mode(vars))
     
   }
-   
+
+  def weightedMedian(){
+    val length = StdIn.readInt()
+    val vars = StdIn.readLine().split(" ").map(_.toInt)
+    val weight = StdIn.readLine().split(" ").map(_.toInt)
+    var sum = 0.0
+
+    for(i <- 0 until length){
+      sum = sum + (vars(i) * weight(i))
+    }
+    val ret = sum/weight.sum
+    println("%.1f".format(ret))
+  }
+
   def mean(args: Array[Double]): Double = {
-    args.sum/args.size
+    args.sum/args.length
   }
   
   def median(args: Array[Double]): Double = {
@@ -45,7 +52,7 @@ object day0Averages {
     val sorted = args.sortWith((first, second) => first < second)
     var frequencies = Map[Double, Int]()
     for(key <- sorted){
-      var value = 0;
+      var value = 0
       frequencies.get(key) match {
         case None => value = 1
         case Some(v) => value = v + 1
@@ -54,7 +61,7 @@ object day0Averages {
     }
     
     val maxfreq = frequencies.maxBy(_._2)._2
-    val filtered = frequencies.filter((e) => e._2 == maxfreq)
+    val filtered = frequencies.filter(e => e._2 == maxfreq)
     filtered.min._1.toInt
   }
   

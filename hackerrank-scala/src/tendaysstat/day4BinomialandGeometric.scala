@@ -1,6 +1,7 @@
 package tendaysstat
 
 import scala.io.StdIn
+import scala.math.pow
 
 /**
  * 
@@ -9,7 +10,7 @@ import scala.io.StdIn
  * @author emo
  *
  */
-object dya4Binomial1and2 {
+object day4BinomialandGeometric {
   
    def main(args: Array[String]){
       
@@ -42,14 +43,36 @@ object dya4Binomial1and2 {
      if(x <= 1) return 1
      return x * factorial(x - 1)
    }
-  
-   
+
+
    private def combination(n: Int, x: Int) : Int = {
      factorial(n) / (factorial(x) * factorial(n-x))
    }
    
    // n is trials; x is success
    private def binomialDist(n: Int, x: Int, p: Double) : Double = {
-     combination(n, x) * Math.pow(p, x) * Math.pow(1-p, n - x)
+     combination(n, x) * pow(p, x) * pow(1-p, n - x)
    }
+
+  def geometric1(): Unit = {
+    val n = 5
+    val p = 1.0 / 3.0
+    val q = 1.0 - p
+    val distro = pow(q, n - 1) * p
+    println("%.3f".format(distro))
+  }
+
+  def geometric2(): Unit = {
+    val numerator = StdIn.readInt() // 1
+    val denominator = StdIn.readInt() // 3
+    val n = StdIn.readInt() // n of inspections
+
+    val p = numerator.toDouble / denominator
+    var distro = 0.0
+    for(i <- 1 until n+1){
+      distro += pow(1.0 - p, i - 1) * p
+    }
+    println("%.3f".format(distro))
+  }
+
 }

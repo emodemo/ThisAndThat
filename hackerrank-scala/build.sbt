@@ -1,7 +1,8 @@
 name := "hackerranck-scala"
 
 version := "0.1"
-scalaVersion := "2.13.0-M4"
+//scalaVersion := "2.13.0-M4"
+scalaVersion := "2.12.8"
 
 scalaSource in Compile := baseDirectory.value / "src"
 scalaSource in Test := baseDirectory.value / "test"
