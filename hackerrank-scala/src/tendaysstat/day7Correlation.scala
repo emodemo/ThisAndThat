@@ -9,9 +9,9 @@ object day7Correlation {
   def pearsonCorrelation() = {
 
     val size = StdIn.readInt()
-    val x = Array[Double](size)
-    val y = Array[Double](size)
-    val xValues = StdIn.readLine().split(" ")
+    val x = Array.ofDim[Double](size)
+    val y = Array.ofDim[Double](size)
+    val xValues: Array[String] = StdIn.readLine().split(" ")
     val yValues = StdIn.readLine().split(" ")
     for (i <- 0 until size) {
       x(i) = xValues(i).toDouble
@@ -48,8 +48,8 @@ object day7Correlation {
 
   def spearmanCorrelation() = {
     val size = StdIn.readInt()
-    val x = Array[Double](size)
-    val y = Array[Double](size)
+    val x = Array.ofDim[Double](size)
+    val y = Array.ofDim[Double](size)
     val xValues = StdIn.readLine().split(" ")
     val yValues = StdIn.readLine().split(" ")
     for (i <- 0 until size) {
@@ -74,12 +74,16 @@ object day7Correlation {
   private def ranks(k: Array[Double]): Array[Double] = {
     val n = k.length
     val tuples = ListBuffer[(Double, Int)]()
-    for(i <- 0 to n){
-      tuples +=  Tuple2(k(i), i)
+    for(i <- 0 until n){
+      tuples += Tuple2(k(i), i)
     }
     val sorted = tuples.sortWith((t1, t2) => t1._1 < t2._1)
-    val ranks = Array[Double](n)
-    sorted.foreach(s => ranks(s._2) = s._1)
+    val ranks = Array.ofDim[Double](n)
+    var idx = 1   
+    for(s <- sorted){
+        ranks(s._2) = idx
+        idx += 1
+    }
     ranks
   }
 
