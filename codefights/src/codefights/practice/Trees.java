@@ -132,6 +132,7 @@ public class Trees {
 		}
 	}
 	
+	// not optimal solution, requires trie
 	String[] findSubstrings(String[] words, String[] parts) {
 		String[] result = new String[words.length];
 	    java.util.Arrays.sort(parts, new MyComparator());

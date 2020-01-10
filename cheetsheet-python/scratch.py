@@ -56,3 +56,12 @@ message.replace("\t", " "*4) # replace \t with 4 times white space
 print('hehehehe'[::-1]) # TODO: check arryas
 table = str.maketrans('abcdefghijklmnopqrstuvwxyz','zabcdefghijklmnopqrstuvwxy') # maps corresponding characters
 'somestring'.translate(table) # translates the string using the table
+
+a = [1, 2, 3]
+print(str(a * 3))
+print(str(3 * a))
+
+def listsConcatenation(lst1, lst2):
+    res = lst1
+    res.extend(lst2)
+    return res

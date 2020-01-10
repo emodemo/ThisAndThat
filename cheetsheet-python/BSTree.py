@@ -56,7 +56,7 @@ class BSTree:
         if   condition < 0 : node.left = self.__delete(node.left, key) ## recursive update of parents
         elif condition > 0 : node.right = self.__delete(node.right, key) ## recursive update of parents
         else:
-            # if one if children is null, just return the other as the one taking its place
+            # if one of children is null, just return the other as the one taking its place
             if node.right == None: return node.left
             if node.left  == None: return node.right
             toDelete = node ## node to delete is found
