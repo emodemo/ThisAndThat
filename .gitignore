@@ -19,8 +19,8 @@
 *.iml
 .idea/
 # produced from vscode
-*/.vscode
-
+# */.vscode # settings are needed for vscode remote containers
+*/__pycache__
 # =========================
 # Github
 # =========================

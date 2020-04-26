@@ -1,0 +1,29 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+// https://github.com/microsoft/vscode-dev-containers/blob/master/container-templates/docker-compose/.devcontainer/devcontainer.json
+// https://code.visualstudio.com/docs/remote/containers#_using-an-image-or-dockerfile
+{
+	"name": "emo-python-anaconda",
+	"context": "..",
+	"image": "python3_anaconda",
+	// "dockerFile": "Dockerfile",
+	// "dockerComposeFile": "docker-compose.yml",
+	// "service": "app",
+	// "workspaceFolder": "/workspace",
+		
+	// Uncomment the next line if you want to publish any ports.
+	// "appPort": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "python --version",
+
+	"extensions": [
+		"ms-python.python",
+		//"VisualStudioExptTeam.vscodeintellicode",
+		"dongli.python-preview"
+	],
+	"settings": {
+		"python.pythonPath": "/opt/bin/python",
+		"python.linting.pylintEnabled": true,
+		"python.linting.enabled": true
+	}
+}

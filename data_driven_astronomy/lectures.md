@@ -1,0 +1,46 @@
+# Lectures
+
+## Week 3
+
+* Kepler looked for planets using the transit method. When a planet passes in front of its star, it blocks out some of the light, and the telescope detects this brief decrease in brightness. However, the planet's orbital plane has to be aligned just right with the telescope's line of sight, for this to work. And assuming that exoplanets orbital axes are randomly distributed in space, then the geometric probability of a transit is only about half a percent. So to find a lot of planets, you need to observe a lot of stars. Of the more than half a million stars in Kepler's field of view, around 150,000 were chosen for observation. And Kepler observed all of these stars simultaneously. When an exoplanet is found, the transit itself is used to characterize the planet. In particular, the transit depth tells you how large the planet is in relation to its host star. But there's a problem, in that the sizes are only relative. An observed transit could be the signature of a big planet orbiting a big star, or small planet orbiting a small star. Either way, you'd observe the same signal. You have to know something about your star to constrain the radius of the planet. To solve this, Kepler has an input catalog, containing information on hundreds of thousands of stars in the telescope's field of view. One of the catalog properties is stellar radius, which is then used to calculate the planetary radius for each detected exoplanet. And in this way, scientists are able to characterize the vast population of exoplanets being discovered
+
+|star/planet| Attribute | Description |
+|:---------:|:---------:|:-----------:|
+|star,planet|Kepler ID  | Unique target identification number for stars |
+|star,planet|KOI name   | String identifier for the Kepler Object of Interest (KOI) |
+|star       |$T_{eff} (K)$ | Effective temperature of a star in Kelvin |
+|star,planet|Radius     | Radius of stars and planets in units of solar radius/earth radius respectively |
+|planet     |Kepler name| Unique string identifier for a confirmed exoplanet in the planet table |
+|planet     |Period     | Orbital period of a planet in units of days |
+|planet     |Status     | Status of a discovered KOI in the planet table, e.g. "confirmed" or "false positive" |
+|planet     |$T_{eq}$      | Equilibrium temperature of a planet in Kelvin |
+
+## Week 4
+
+* When stars explode as **supernovae** they can outshine an entire galaxy. Meaning we can see them from hundreds of millions of light years away. This offers one of the fundamental methods of measuring the distances to the farthest galaxies. A similar technique involves the study of an ensemble of stars in a galaxy and measuring the brightness of the most luminous stars.
+* Since **red giant** stars reach the same maximum luminosity independent of the galaxy they're in, we can tell how far away that galaxy is.
+* By studying the life cycles of stars, we learn how long certain types of stars live for. So their absence within a given cluster tells us the minimum age for that cluster.
+
+### Life-cycle
+
+* Massive clouds can collapse under their own gravity, fragmenting into globules that become denser and hotter. These globules continue to collapse, eventually forming a protostar. A protostar still gathers mass from the gas and dust surrounding it. There's a competition between the gravity of the protostar causing material to fall on to its surface, and the radiation emitted by the star which hinders the process. Ultimately, the radiation wins and the star blows away the shroud of material, becoming a visible, pre-main sequence star.
+* Many such stars have protoplanetary discs surrounding them made up of material left over from star formation. Planets form within the disc and eat up the remaining gas and dust. Meanwhile, the pre-main sequence star continues to contract getting hotter and denser. The pre-main sequence phase and planet formation are over quickly. The increase in temperature and density of the star's core leads to the necessary conditions for nuclear fusion, marking the start of the main sequence phase. This is the longest phase of evolution for stars like the sun, which will fuse hydrogen to helium for billions of years. The masses of stars are set at birth, once the parent cloud dissipates. We observe a wide range of star masses, but low mass stars are the most common. Our sun is a yellow dwarf star, which are pretty common. More common are the red dwarf stars which have less than half the mass of our sun. Proximus Centauri, the closest star to us at just over four light-years away, is a red dwarf. For every one star like the sun, there are ten red dwarfs like Proximus Centauri. Intermediate mass stars are comparatively rare, for every ten sun like stars in the galaxy, there's only one like Sirius A who's mass is twice that of the sun. But high mass stars with masses tens of times the mass of the sun are extremely rare. Only one in 3 million main sequence stars falls into this category. The lifetime of a main sequence star depends on its mass. The more massive the star, the shorter its lifetime. Massive blue stars like Spica live for only 10 million years. The sun will live for 10 billion years and most red dwarfs live for over a trillion years. What happens after the main sequence also depends on mass. Red dwarfs live a boring life, almost unchanging for their trillion year lifespans. At the end of which, they just fade into darkness. Stars like the sun become red giants. In this phase, stars swell to very large radii. When the sun becomes a red giant, it will be two astronomical units across. In other words, it will have expanded to twice the size of the Earth's current orbit. During the Red Giant phase, stars fuse helium in their cores instead of hydrogen. Although, some hydrogen fusion does continue in a shell around the core. Depending on the mass of the star, many different elements can be fused in this way, including oxygen, the very oxygen we breathe. The most massive stars can fuse elements all the way up to iron in successive shells around the core. After the red giant phase, intermediate and low mass stars eject their atmospheres into space to become planetary nebulae. The name's somewhat of a misnomer from the 18th century when astronomers thought these nebulae looked like planets. Although they're not actually related to planets, the material they eject into space will one day be incorporated into molecular clouds and become the building blocks of the next generation of stars and planets. At the core of a planetary nebula lies a white dwarf, a small dense object about the size of the Earth. White dwarfs are the exposed cores of red giants after their atmospheres have been ejected. They are very hot, but not very bright, typically 100 to 1,000 times fainter than stars like the sun. White dwarfs gradually cool and fade, radiating their thermal energy into space.
+* High mass stars do not end their lives as planetary nebulae or white dwarfs, but explode as spectacular supernovae instead. Although they look quite similar to planetary nebulae, supernova reminants like the Crab Nebula are made of quite different material. It is in supernova explosions that all the chemical elements heavier then iron are made. An object is left behind after a supernova explosion, too which, in most cases, is a neutron star.
+* Neutrons stars are extremely dense. Typically, 10 to 20 kilometers across, but with masses up to twice the mass of the sun. Because of their densities, neutron stars have incredibly strong gravitational and magnetic fields. The random orientation of their magnetic fields in space leads some neutron stars viewed from the earth to be pulsars, as is the case for the pulsar in the Crab Nebula. If the star is massive enough, at least 30 times the mass of our sun, the supernova remnant could be a black hole, an object so dense not even light can escape it. An estimated 1 billion black holes exist in the galaxy but they're very hard to detect. One of the best ways of detecting them is to look for the way their intense gravity distorts space and bends the light passing nearby. The supernova explosions that form neutron stars and black holes also eject several solar masses of material into space, feeding the next generation of star formation.
+* short description
+  * red dwarf: 0.5 sun masses, spectral type M => fade into darkness
+  * yellow dwarf (the sun), spectral type G    => red giant => planetary nebulae with white dwarf at the center (read giants exposed cores)
+    * => fade into the darkness
+    * => or supernova
+  * intermediate: 2.0 sun masses, spectral type A
+  * high mass stars: 50.0 sun masses, spectral type O  => explode =>
+    * nebulae + neutron star (2.o sun masses but 10-20 km diameter only => some become pulsars)
+    * if the star mass is > 30 sun masses => black hole instead of neutron star
+* The color magnitude diagram tells us what types of stars dominate the cluster. Stars in a cluster all have the same age and chemical composition or 'metallicity'. In old clusters, the brightest stars are red giants, and the upper left of the main sequence is missing.
+
+## Week 5
+
+* distance measures:
+  * parallax
+  * supernova
+  * redshift

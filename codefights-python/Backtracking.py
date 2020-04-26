@@ -16,6 +16,8 @@ def sumSubsets(arr, num):
 	    return [[]]
 	  return r[::-1]
 
+print(str(sumSubsets([1,2,3,4,5],5))) # [[1,4],[2,3],[5]]
+
 # the only differences in the algorithms are:
 # 1) using a set 
 # 2) "j in range(i, length)" to get the current value too
@@ -63,7 +65,7 @@ def wordBoggle(board, words):
                         boardCopy[r][c] = '' # remove from board => cannot be reused for same word
                         if dfs(boardCopy,word,widx+1, False, r, c):
                             return True # word found
-                        boardCopy[r][c] = letter # word not found, get back and coninue with next letter
+                        boardCopy[r][c] = letter # word not found, get back and continue with next letter
         # find rest of letters in neighbours
         else:
             for r in range(row-1,row+2):

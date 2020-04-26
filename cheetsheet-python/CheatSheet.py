@@ -12,6 +12,45 @@ def binarySearch(array, value):
         elif midValue > value: max = mid - 1
     return False
 
+# def sortedArraysMedian(array1, array2):
+#print(str(sortedArraysMedian([3,5,10,11,17],[9,13,20,21,23,27])))
+
+# quicksort: reverse idea of merge sort (sort, sort, merge), here (partition, sort, sort)
+# 1 partition so that  a[lo..j-1] <= a[j] <= a[j+1..hi]
+# 2 sort, sort
+def quicksort(array):
+    __q_sort(array, 0, len(array) - 1)
+    return array
+
+def __q_sort(array, lo, hi):
+    if lo >= hi : return
+    partition = __q_partition(array, lo, hi)
+    __q_sort(array, lo, partition - 1)
+    __q_sort(array, partition + 1, hi)
+
+def __q_partition(array, lo, hi):
+    i, j = lo + 1, hi # start and end pointers
+    v = array[0] # v is partition value. 
+    while True:
+        while array[i] < v :
+            i += 1
+            if i == hi : break
+        while array[j] > v :
+            j -= 1
+            if j == lo : break
+        if i >= j : break
+        __q_swap(array, i, j)
+    __q_swap(array, lo, j) # put v = a[j] into position
+    return j               # with a[lo..j-1] <= a[j] <= a[j+1..hi]
+
+def __q_swap(array, i, j):
+    array[i], array[j] = array[j], array[i]
+    # v1, v2 = array[i], array[j]
+    # array[i] = v2
+    # array[i] = v1
+
+print(str(quicksort(list("KRATELEPUIMQCXOS"))))
+
 # merge sort
 # uses two pointers: start1 and mid, compare them and shift+1 the smaller
 def mergeSort(array):
@@ -108,7 +147,7 @@ edges = [e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16]
 # prefix sum (see arrayManipulation)
 # dynamic rogramming, quick sort
 # B+Tree,, segment tree
-# two pointer : start/start fast/slow, start/end (Sotring.sortedSquaredArray)
+# two pointer : start/start fast/slow (head->head.next, head.next->head.next.next), start/end (Sotring.sortedSquaredArray)
 # lca, inorder, reverse in-order, preorder
 # isBST
 # challanges - christmas toys
