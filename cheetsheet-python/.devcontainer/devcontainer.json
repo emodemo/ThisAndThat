@@ -2,9 +2,8 @@
 // https://github.com/microsoft/vscode-dev-containers/blob/master/container-templates/docker-compose/.devcontainer/devcontainer.json
 // https://code.visualstudio.com/docs/remote/containers#_using-an-image-or-dockerfile
 {
-	"name": "emo-keras-algoexpert",
+	"name": "emo-keras",
 	"context": "..",
-	//"image": "gw000/keras",
 	"image": "python",
 	// "dockerFile": "Dockerfile",
 		

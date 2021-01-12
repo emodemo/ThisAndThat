@@ -2,11 +2,13 @@
 // https://github.com/microsoft/vscode-dev-containers/blob/master/container-templates/docker-compose/.devcontainer/devcontainer.json
 // https://code.visualstudio.com/docs/remote/containers#_using-an-image-or-dockerfile
 {
-	"name": "emo-keras-algoexpert",
+	"name": "emo-python-anaconda",
 	"context": "..",
-	//"image": "gw000/keras",
-	"image": "python",
+	"image": "python3_anaconda",
 	// "dockerFile": "Dockerfile",
+	// "dockerComposeFile": "docker-compose.yml",
+	// "service": "app",
+	// "workspaceFolder": "/workspace",
 		
 	// Uncomment the next line if you want to publish any ports.
 	// "appPort": [],
@@ -15,7 +17,9 @@
 	// "postCreateCommand": "python --version",
 
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		//"VisualStudioExptTeam.vscodeintellicode",
+		"dongli.python-preview"
 	],
 	"settings": {
 		"python.pythonPath": "/opt/bin/python",

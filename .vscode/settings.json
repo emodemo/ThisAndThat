@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\dev\\python-3.9.0-embed-amd64\\python.exe"
+    // ,
+    // "terminal.integrated.inheritEnv": false,
+    // "python.terminal.activateEnvironment": true
+}

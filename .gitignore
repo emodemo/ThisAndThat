@@ -12,6 +12,8 @@
 # produced from gradle
 .gradle/
 **/build/
+*.bat
+gradlew
 # produced from sbt
 **/project/
 **/target/

@@ -12,12 +12,10 @@ def binarySearch(array, value):
         elif midValue > value: max = mid - 1
     return False
 
-# def sortedArraysMedian(array1, array2):
-#print(str(sortedArraysMedian([3,5,10,11,17],[9,13,20,21,23,27])))
-
-# quicksort: reverse idea of merge sort (sort, sort, merge), here (partition, sort, sort)
-# 1 partition so that  a[lo..j-1] <= a[j] <= a[j+1..hi]
-# 2 sort, sort
+# quicksort:
+# choose a pivot, set start/end pointer, swap elements if bigger/smaller than the pivot;
+# set the pivot at the partition index so that  a[lo..partition-1] <= a[partitionj] <= a[partitionj+1..hi]
+# reverse idea of merge sort (sort, sort, merge), here (partition, sort, sort)
 def quicksort(array):
     __q_sort(array, 0, len(array) - 1)
     return array
@@ -29,32 +27,30 @@ def __q_sort(array, lo, hi):
     __q_sort(array, partition + 1, hi)
 
 def __q_partition(array, lo, hi):
-    i, j = lo + 1, hi # start and end pointers
-    v = array[0] # v is partition value. 
+    start, partition = lo + 1, hi # start and end pointers
+    pivot = array[lo] # v is partition value. 
     while True:
-        while array[i] < v :
-            i += 1
-            if i == hi : break
-        while array[j] > v :
-            j -= 1
-            if j == lo : break
-        if i >= j : break
-        __q_swap(array, i, j)
-    __q_swap(array, lo, j) # put v = a[j] into position
-    return j               # with a[lo..j-1] <= a[j] <= a[j+1..hi]
+        while array[start] < pivot :
+            start += 1
+            if start == hi : break
+        while array[partition] > pivot :
+            partition -= 1
+            if partition == lo : break
+        if start >= partition : break
+        __q_swap(array, start, partition)
+    __q_swap(array, lo, partition) # put v = a[partition] into position
+    return partition               # with a[lo..partition-1] <= a[partition] <= a[partition+1..hi]
 
 def __q_swap(array, i, j):
     array[i], array[j] = array[j], array[i]
-    # v1, v2 = array[i], array[j]
-    # array[i] = v2
-    # array[i] = v1
 
-print(str(quicksort(list("KRATELEPUIMQCXOS"))))
+print("quicksort " + str(quicksort([2,3,1,5,6,9,8,7,4])))
+print("quicksort " + str(quicksort(list("KRATELEPUIMQCXOS"))))
 
 # merge sort
 # uses two pointers: start1 and mid, compare them and shift+1 the smaller
-def mergeSort(array):
-    aux = array
+def mergesort(array):
+    aux = [None] * len(array)
     __sort(array, aux, 0, len(array)-1)
     return array
 
@@ -74,6 +70,9 @@ def __sort(array, aux, lo, hi):
     __sort(array, aux, lo, mid)
     __sort(array, aux, mid+1, hi)
     __merge(array, aux, lo, mid, hi)
+
+print("mergesort " + str(mergesort([2,3,1,5,6,9,8,7,4])))
+print("mergesort " + str(mergesort(list("KRATELEPUIMQCXOS"))))
 
 # graph algorithms
 class Vertex:
@@ -141,15 +140,3 @@ e13 = Edge(v6, v2, 0.40); e14 = Edge(v3, v6, 0.52); e15 = Edge(v6, v0, 0.58); e1
 #0-7 0.16 1-7 0.19 0-2 0.26 2-3 0.17 5-7 0.28 4-5 0.35 6-2 0.40 1.81
 vertices = [v0,v1,v2,v3,v4,v5,v6,v7]
 edges = [e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16]
-
-
-# pp 967 sedgewick
-# prefix sum (see arrayManipulation)
-# dynamic rogramming, quick sort
-# B+Tree,, segment tree
-# two pointer : start/start fast/slow (head->head.next, head.next->head.next.next), start/end (Sotring.sortedSquaredArray)
-# lca, inorder, reverse in-order, preorder
-# isBST
-# challanges - christmas toys
-# graph coloring
-# metric tree, rtree, quadtree
