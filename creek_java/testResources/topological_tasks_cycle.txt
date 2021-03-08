@@ -1,0 +1,8 @@
+clean
+lint
+lint build
+lint test
+build test
+build deploy
+test deploy
+deploy lint

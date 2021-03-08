@@ -13,5 +13,5 @@
             "console": "integratedTerminal"
         }
     ]
-    ,"pythonPath": "C:/dev/python-3.7.2.post1-embed-amd64/python.exe"
+    ,"python": "C:/dev/python-3.7.2.post1-embed-amd64/python.exe"
 }

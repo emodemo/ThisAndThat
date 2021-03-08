@@ -27,24 +27,20 @@ def __q_sort(array, lo, hi):
     __q_sort(array, partition + 1, hi)
 
 def __q_partition(array, lo, hi):
-    start, partition = lo + 1, hi # start and end pointers
-    pivot = array[lo] # v is partition value. 
+    pivot, left, right = lo, lo + 1, hi # start and end pointers
     while True:
-        while array[start] < pivot :
-            start += 1
-            if start == hi : break
-        while array[partition] > pivot :
-            partition -= 1
-            if partition == lo : break
-        if start >= partition : break
-        __q_swap(array, start, partition)
-    __q_swap(array, lo, partition) # put v = a[partition] into position
-    return partition               # with a[lo..partition-1] <= a[partition] <= a[partition+1..hi]
+        while left < hi and array[left] <= array[pivot] : left += 1
+        while right > lo and array[right] >= array[pivot] : right += 1
+        if left >= right : break
+        __q_swap(array, left, right)
+    __q_swap(array, lo, right) # put v = a[partition] into position
+    return right               # with a[lo..partition-1] <= a[partition] <= a[partition+1..hi]
 
 def __q_swap(array, i, j):
     array[i], array[j] = array[j], array[i]
 
-print("quicksort " + str(quicksort([2,3,1,5,6,9,8,7,4])))
+print("quicksort " + str(quicksort([1,1,1,2,3,1,5,6,9,8,7,4,0])))
+print("quicksort " + str(quicksort([3,3,3,3,3,3,3,3,3,3,3,3,3])))
 print("quicksort " + str(quicksort(list("KRATELEPUIMQCXOS"))))
 
 # merge sort

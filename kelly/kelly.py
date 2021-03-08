@@ -65,17 +65,6 @@ sol = minimize(objective, x_default,method='SLSQP', bounds=bounds, constraints=[
 #print(str(sol))
 print('Kelly portfolio weights are as follows ' + str(sol.x*100))
 
-# example for time series
-from scipy.optimize import fmin
-dat = [] # your time series
-def kelly(x):
-    return np.prod(1+dat*x) #Kelly vector product of time series
-
-max_x = fmin(lambda x: -kelly(x), 0, maxiter=25) #maxiter=25, ftol=0.01, xtol=.01 to solve for the maximum value (the Kelly bet)
-
-#print max_x[0] # returns the Kelly bet for imported time series
-
-
 ## ME Example from  "mathexchange/Kelly criterion with more than two outcomes"
 # f(x)=0.7log(1−x)+0.2log(1+10x)+0.1log(1+30x)
 # note from the math site: 
