@@ -1,0 +1,17 @@
+version: '2.3'
+services:
+  p9-db:
+    container_name: dummy-spring-db
+    image: postgres:9.6.17
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: pgsql
+      POSTGRES_PASSWORD: pgsql
+      POSTGRES_DB: interview
+    healthcheck:
+      test: [ "CMD-SHELL", "psql $$POSTGRES_DB $$POSTGRES_USER --command 'SELECT VERSION();'" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5

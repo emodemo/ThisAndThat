@@ -1,0 +1,109 @@
+# version: '2.3'
+version: '3'
+services:
+
+  squid:
+    container_name: squid-proxy
+    image: ubuntu/squid:latest
+    environment:
+      TZ: "UTC"
+    ports:
+      - 3128:3128
+    volumes:
+      - ./squid/squid2.conf:/etc/squid/squid.conf
+      - ./squid/acl_providers:/etc/squid/acl_providers
+
+  firefox-marionette:
+    container_name: selenium-firefox-marionette
+    # image: selenium/standalone-firefox-debug:3.4.0-einsteinium
+    image: selenium/standalone-firefox-debug:2.53.0
+    environment:
+      SE_OPTS: "-timeout 30000"
+#      http_proxy: "http://squid:3128"
+#      https_proxy: "http://squid:3128"
+    shm_size: '512mb'
+    restart: always
+    ports:
+      - 5901:5900
+      - 4401:4444
+
+  firefox-quantum:
+    container_name: selenium-firefox-quantum
+    image: selenium/standalone-firefox-debug:3.141.59-copernicium
+    environment:
+      SE_OPTS: "-timeout 30000"
+#      http_proxy: "http://squid:3128"
+#      https_proxy: "http://squid:3128"
+    shm_size: '512mb'
+    restart: always
+    ports:
+      - 5902:5900
+      - 4402:4444
+
+  firefox-88:
+    container_name: selenium-firefox-88
+    image: selenium/standalone-firefox-debug:3.141.59-20210422
+    environment:
+      SE_OPTS: "-timeout 30000"
+      http_proxy: "http://squid:3128"
+      https_proxy: "http://squid:3128"
+    shm_size: '512mb'
+    restart: always
+    ports:
+      - 5903:5900
+      - 4403:4444
+
+  chrome90:
+    container_name: selenium-chrome-90
+    image: selenium/standalone-chrome-debug:3.141.59-20210422
+    environment:
+      SE_OPTS: "-timeout 30000"
+#      http_proxy: "http://squid:3128"
+#      https_proxy: "http://squid:3128"
+    shm_size: '512mb'
+    restart: always
+    ports:
+      - 5911:5900
+      - 4411:4444
+
+  chrome53:
+    container_name: selenium-chrome-53
+    image: selenium/standalone-chrome-debug:2.53.0
+#    image: selenium/standalone-chrome:2.53.0
+#    environment:
+      # SE_OPTS: "-timeout 30000"
+#      http_proxy: "http://squid:3128"
+#      https_proxy: "http://squid:3128"
+    restart: always
+    ports:
+      - 5921:5900
+      - 4421:4444
+
+  chrome67:
+    container_name: selenium-chrome-67
+    image: selenium/standalone-chrome-debug:3.13.0-argon
+    environment:
+      SE_OPTS: "-timeout 30000"
+#      http_proxy: "http://squid:3128"
+#      https_proxy: "http://squid:3128"
+    restart: always
+    ports:
+      - 5931:5900
+      - 4431:4444
+
+  all:
+    image: alpine:3.13.4
+    depends_on:
+      - squid
+      - chrome53
+      - chrome67
+      - chrome90
+      - firefox-marionette
+      - firefox-quantum
+      - firefox-88
+
+  ff:
+    image: alpine:3.13.4
+    depends_on:
+      - squid
+      - firefox-88

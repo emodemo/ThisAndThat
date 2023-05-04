@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  outgoing-wont-work:
+    image: alpine
+    networks:
+      - no-internet
+    command: ping -c 3 google.com # will crash
+
+  internal-will-work:
+    image: alpine
+    networks:
+      - no-internet
+    command: ping -c 3 internal-and-external
+
+  internal-and-external:
+    image: alpine
+    networks:
+      - no-internet
+      - internet
+    command: ping -c 3 google.com
+
+networks:
+  no-internet:
+    internal: true
+  internet:

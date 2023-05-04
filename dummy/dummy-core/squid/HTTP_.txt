@@ -1,0 +1,177 @@
+10:30:10 PM: Executing ':SeleniumTest.main()'...
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :SeleniumTest.main()
+======================  START  chrome53 ===========================
+ ================== https://dir.bg/ 
+ <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" i18n-values="dir:textdirection;lang:language" dir="ltr" lang="en" i18n-processed=""><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,&#10;                                 maximum-scale=1.0, user-scalable=no" />
+  <title i18n-content="title">https://dir.bg/ is not available</title>
+  <style>/* Copyright 2014 The Chromium Authors. All rights reserved.
+   Use of this source code is governed by a BSD-style license that can be
+   found in the LICENSE file. */
+
+a {
+  color: #585858;
+}
+
+.bad-clock .icon {
+  background-image: -webkit-image-set(
+      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAFo0lEQVR4Xu3cS1OTVxwG8Ha6dsZNt/0S7ozX+wUSGKN7ycIvkJ2OiNcdbvwMfABXLS1VvLXFSMWUgFAh1oJICCEGq8UFp8+fPu87J4S3vrmcvIfOceaZMKOSnN/8z/+c95Yv3B8XFxcXFxcXFzNRZ89+rZLJJNKLDCAZdfp0Hini5zWJ/Izk5e+QAf7bpPzf/yvKLkD0I1lArCOqwazL70D65Xdub5RUagcA0kDJCYCJ8Hen5b22D8y5czvVmTN9gCkRwHz
+ ================== 
+ ================== https://www.bing.com 
+Feb 14, 2022 10:30:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Feb 14, 2022 10:30:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+ <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr"><head><meta name="theme-color" content="#4F4F4F" /><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing." /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta property="fb:app_id" content="570810223073062" /><meta property="og:type" content="website" /><meta property="og:title" content="Info" /><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf=" /><meta property="og:image:width" content="1366" /><meta property="og:image:height" content="768" /><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW" /><meta property="og:site_name" content="Bing" /><meta property="og:description" content="The tranquil heart-shaped island in our image can " /><
+ ================== 
+======================  START  chrome67 ===========================
+Feb 14, 2022 10:30:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+ ================== https://dir.bg/ 
+ <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" i18n-processed=""><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,&#10;                                 maximum-scale=1.0, user-scalable=no" />
+  <title>dir.bg</title>
+  <style>/* Copyright 2017 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+a {
+  color: rgb(88, 88, 88);
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  color: rgb(100, 100, 100);
+  word-wrap: break-word;
+}
+
+#details-button {
+  background: inherit;
+  border: 0;
+  float: none;
+  margin: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 125%;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}</style>
+  <style>/* Copyright 2014 The Chromium Authors. All rights reserved.
+   Use of t
+ ================== 
+Feb 14, 2022 10:30:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+ ================== https://www.bing.com 
+ <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr"><head><meta name="theme-color" content="#4F4F4F" /><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing." /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta property="fb:app_id" content="570810223073062" /><meta property="og:type" content="website" /><meta property="og:title" content="Info" /><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf=" /><meta property="og:image:width" content="1366" /><meta property="og:image:height" content="768" /><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW" /><meta property="og:site_name" content="Bing" /><meta property="og:description" content="The tranquil heart-shaped island in our image can " /><
+ ================== 
+======================  START  chrome90 ===========================
+Feb 14, 2022 10:30:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://dir.bg/ 
+ ================== 
+Feb 14, 2022 10:30:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://www.bing.com 
+ <html lang="en" dir="ltr"><head><meta name="theme-color" content="#4F4F4F"><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing."><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="fb:app_id" content="570810223073062"><meta property="og:type" content="website"><meta property="og:title" content="Info"><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf="><meta property="og:image:width" content="1366"><meta property="og:image:height" content="768"><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW"><meta property="og:site_name" content="Bing"><meta property="og:description" content="The tranquil heart-shaped island in our image can "><title>Bing</title><link rel="shortcut icon" href="/sa/simg/favicon-2x.ico"><li
+ ================== 
+======================  START  ffMarionette ===========================
+Feb 14, 2022 10:30:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+ ================== https://dir.bg/ 
+ <html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="?????????? ?????? ?? ???????? ? ????? � ????????, ????????, ?????????, ?????, ??????????, ??????? ? ????????, ?????????. ???????, ????????? ? ?????????. ">
+<link rel="canonical" href="https://dir.bg">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.dir.bg/icons/2.ico?_=1591303370">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.dir.bg/">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Dir.bg - ??????????? ???????? ??????!</title>
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/all.css?_=1644834115">
+
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/dir-all.css?_=1644834099">
+<!--[if lt IE 9]>
+        <
+ ================== 
+Feb 14, 2022 10:30:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+ ================== https://www.bing.com 
+ <html dir="ltr" lang="en"><head><meta name="theme-color" content="#4F4F4F"><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing."><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="fb:app_id" content="570810223073062"><meta property="og:type" content="website"><meta property="og:title" content="Info"><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf="><meta property="og:image:width" content="1366"><meta property="og:image:height" content="768"><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW"><meta property="og:site_name" content="Bing"><meta property="og:description" content="The tranquil heart-shaped island in our image can "><title>Bing</title><link rel="shortcut icon" href="/sa/simg/favicon-2x.ico"><li
+ ================== 
+======================  START  ffQuantum ===========================
+Feb 14, 2022 10:30:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://dir.bg/ 
+ <html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="?????????? ?????? ?? ???????? ? ????? � ????????, ????????, ?????????, ?????, ??????????, ??????? ? ????????, ?????????. ???????, ????????? ? ?????????. ">
+<link rel="canonical" href="https://dir.bg">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.dir.bg/icons/2.ico?_=1591303370">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.dir.bg/">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Dir.bg - ??????????? ???????? ??????!</title>
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/all.css?_=1644834115">
+
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/dir-all.css?_=1644834099">
+<!--[if lt IE 9]>
+        <
+ ================== 
+Feb 14, 2022 10:30:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://www.bing.com 
+ <html dir="ltr" lang="en"><head><meta name="theme-color" content="#4F4F4F"><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing."><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="fb:app_id" content="570810223073062"><meta property="og:type" content="website"><meta property="og:title" content="Info"><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf="><meta property="og:image:width" content="1366"><meta property="og:image:height" content="768"><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW"><meta property="og:site_name" content="Bing"><meta property="og:description" content="The tranquil heart-shaped island in our image can "><title>Bing</title><link rel="shortcut icon" href="/sa/simg/favicon-2x.ico"><li
+ ================== 
+======================  START  ff88 ===========================
+Feb 14, 2022 10:30:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://dir.bg/ 
+ <html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="?????????? ?????? ?? ???????? ? ????? � ????????, ????????, ?????????, ?????, ??????????, ??????? ? ????????, ?????????. ???????, ????????? ? ?????????. ">
+<link rel="canonical" href="https://dir.bg">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.dir.bg/icons/2.ico?_=1591303370">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.dir.bg/">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Dir.bg - ??????????? ???????? ??????!</title>
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/all.css?_=1644834115">
+
+<link media="all" type="text/css" rel="stylesheet" href="https://static.dir.bg/css/desktop/dir-all.css?_=1644834099">
+<!--[if lt IE 9]>
+        <
+ ================== 
+Feb 14, 2022 10:30:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ ================== https://www.bing.com 
+ <html dir="ltr" lang="en"><head><meta name="theme-color" content="#4F4F4F"><meta name="description" content="Bing helps you turn information into action, making it faster and easier to go from searching to doing."><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="fb:app_id" content="570810223073062"><meta property="og:type" content="website"><meta property="og:title" content="Info"><meta property="og:image" content="https://www.bing.com/th?id=OHR.MaldivesHeart_ROW3978978073_tmb.jpg&amp;rf="><meta property="og:image:width" content="1366"><meta property="og:image:height" content="768"><meta property="og:url" content="https://www.bing.com/?form=HPFBBK&amp;ssd=20220214_0800&amp;mkt=en-WW"><meta property="og:site_name" content="Bing"><meta property="og:description" content="The tranquil heart-shaped island in our image can "><title>Bing</title><link rel="shortcut icon" href="/sa/simg/favicon-2x.ico"><li
+ ================== 
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 44s
+2 actionable tasks: 2 executed
+10:30:55 PM: Execution finished ':SeleniumTest.main()'.

@@ -10,16 +10,15 @@
 apply plugin: 'java-library'
 
 sourceSets {
-    main {
-        java {
-            srcDirs = ['src']
-        }
-    }
+    main.java.srcDirs = ['src']
 }
 
 repositories{
-//	mavenCentral()
+	mavenCentral()
 	mavenLocal()
+    maven {
+        url "https://maven2.pavlab.msl.ubc.ca/" // required for classmexer
+    }
 }
 
 dependencies {

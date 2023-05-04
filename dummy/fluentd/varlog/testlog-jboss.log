@@ -1,0 +1,277 @@
+{"log":"2021-12-03 09:34:55,278 INFO  [PaymentRequest] (default task-27) 068f32d4-f986-493f-9e16-7d29f1bea2b9--Amount formatted to 2.00\n","stream":"stdout","time":"2021-12-03T08:34:55.278371749Z"}
+{"log":"2021-12-03 09:34:55,287 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-27) SQL Error: 0, SQLState: 42703\n","stream":"stdout","time":"2021-12-03T08:34:55.28738545Z"}
+{"log":"2021-12-03 09:34:55,287 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-27) ERROR: column \"identity_token_id\" of relation \"puma\" does not exist\n","stream":"stdout","time":"2021-12-03T08:34:55.287439961Z"}
+{"log":"  Position: 103\n","stream":"stdout","time":"2021-12-03T08:34:55.287448751Z"}
+{"log":"2021-12-03 09:34:55,288 ERROR [PumaDAO] (default task-27) 068f32d4-f986-493f-9e16-7d29f1bea2b9--Failed to create entity com.mb.ngp.p9.model.Puma@434327: javax.persistence.PersistenceException: 068f32d4-f986-493f-9e16-7d29f1bea2b9--org.hibernate.exception.SQLGrammarException: could not execute statement\n","stream":"stdout","time":"2021-12-03T08:34:55.289373179Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)\n","stream":"stdout","time":"2021-12-03T08:34:55.289388819Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)\n","stream":"stdout","time":"2021-12-03T08:34:55.289393769Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)\n","stream":"stdout","time":"2021-12-03T08:34:55.289398409Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)\n","stream":"stdout","time":"2021-12-03T08:34:55.289440649Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.jpa.container.AbstractEntityManager.persist(AbstractEntityManager.java:580)\n","stream":"stdout","time":"2021-12-03T08:34:55.289445629Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- com.mb.ngp.p9.dao.BaseDAO.create(BaseDAO.java:86)\n","stream":"stdout","time":"2021-12-03T08:34:55.289449559Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n","stream":"stdout","time":"2021-12-03T08:34:55.289453339Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n","stream":"stdout","time":"2021-12-03T08:34:55.289460389Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.289464449Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- java.lang.reflect.Method.invoke(Method.java:498)\n","stream":"stdout","time":"2021-12-03T08:34:55.28946856Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)\n","stream":"stdout","time":"2021-12-03T08:34:55.2894728Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.28947663Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)\n","stream":"stdout","time":"2021-12-03T08:34:55.28948055Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:90)\n","stream":"stdout","time":"2021-12-03T08:34:55.28951505Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:101)\n","stream":"stdout","time":"2021-12-03T08:34:55.28952174Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)\n","stream":"stdout","time":"2021-12-03T08:34:55.28952571Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.28953004Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.28953445Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.28954668Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)\n","stream":"stdout","time":"2021-12-03T08:34:55.28955149Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.2895566Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)\n","stream":"stdout","time":"2021-12-03T08:34:55.2895609Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.28956569Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)\n","stream":"stdout","time":"2021-12-03T08:34:55.28957452Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289579511Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)\n","stream":"stdout","time":"2021-12-03T08:34:55.289612351Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)\n","stream":"stdout","time":"2021-12-03T08:34:55.289616831Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289621301Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)\n","stream":"stdout","time":"2021-12-03T08:34:55.289626771Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289630911Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)\n","stream":"stdout","time":"2021-12-03T08:34:55.289635491Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289640741Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)\n","stream":"stdout","time":"2021-12-03T08:34:55.289645871Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:332)\n","stream":"stdout","time":"2021-12-03T08:34:55.289650591Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:240)\n","stream":"stdout","time":"2021-12-03T08:34:55.289654571Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289658711Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)\n","stream":"stdout","time":"2021-12-03T08:34:55.289662691Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.289667221Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)\n","stream":"stdout","time":"2021-12-03T08:34:55.289671631Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289701472Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)\n","stream":"stdout","time":"2021-12-03T08:34:55.289706022Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289710672Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)\n","stream":"stdout","time":"2021-12-03T08:34:55.289715362Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289724302Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)\n","stream":"stdout","time":"2021-12-03T08:34:55.289729232Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289733702Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)\n","stream":"stdout","time":"2021-12-03T08:34:55.289737772Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289742052Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.289746262Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289750412Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)\n","stream":"stdout","time":"2021-12-03T08:34:55.289754752Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289759092Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)\n","stream":"stdout","time":"2021-12-03T08:34:55.289787632Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289793452Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)\n","stream":"stdout","time":"2021-12-03T08:34:55.289797383Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.289802743Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)\n","stream":"stdout","time":"2021-12-03T08:34:55.289806833Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:609)\n","stream":"stdout","time":"2021-12-03T08:34:55.289810853Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)\n","stream":"stdout","time":"2021-12-03T08:34:55.294824128Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.29500012Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)\n","stream":"stdout","time":"2021-12-03T08:34:55.29501108Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)\n","stream":"stdout","time":"2021-12-03T08:34:55.29502118Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)\n","stream":"stdout","time":"2021-12-03T08:34:55.29504011Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.295285873Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- com.mb.ngp.p9.dao.puma.PumaDAO$$$view45.create(Unknown Source)\n","stream":"stdout","time":"2021-12-03T08:34:55.295306773Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- com.mb.ngp.p9.tiger.backend.PaymentRequest.createPaymentRequest(PaymentRequest.java:566)\n","stream":"stdout","time":"2021-12-03T08:34:55.295670806Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- com.mb.ngp.p9.tiger.backend.PaymentRequest.handleRequest(PaymentRequest.java:296)\n","stream":"stdout","time":"2021-12-03T08:34:55.295687376Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- com.mb.ngp.p9.tiger.ws.servlets.PumaInitServlet.doPost(PumaInitServlet.java:97)\n","stream":"stdout","time":"2021-12-03T08:34:55.295695826Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- javax.servlet.http.HttpServlet.service(HttpServlet.java:707)\n","stream":"stdout","time":"2021-12-03T08:34:55.295704196Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- javax.servlet.http.HttpServlet.service(HttpServlet.java:790)\n","stream":"stdout","time":"2021-12-03T08:34:55.295712816Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)\n","stream":"stdout","time":"2021-12-03T08:34:55.295842008Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)\n","stream":"stdout","time":"2021-12-03T08:34:55.295848028Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:65)\n","stream":"stdout","time":"2021-12-03T08:34:55.295852068Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)\n","stream":"stdout","time":"2021-12-03T08:34:55.295856048Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)\n","stream":"stdout","time":"2021-12-03T08:34:55.295861238Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.295865638Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)\n","stream":"stdout","time":"2021-12-03T08:34:55.295869518Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)\n","stream":"stdout","time":"2021-12-03T08:34:55.295873578Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.295877518Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)\n","stream":"stdout","time":"2021-12-03T08:34:55.295881418Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.295885418Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)\n","stream":"stdout","time":"2021-12-03T08:34:55.295893268Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)\n","stream":"stdout","time":"2021-12-03T08:34:55.295897308Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)\n","stream":"stdout","time":"2021-12-03T08:34:55.295901298Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296008369Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296012469Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)\n","stream":"stdout","time":"2021-12-03T08:34:55.296016279Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296020889Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)\n","stream":"stdout","time":"2021-12-03T08:34:55.296024819Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296028809Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)\n","stream":"stdout","time":"2021-12-03T08:34:55.296032659Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.296036599Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)\n","stream":"stdout","time":"2021-12-03T08:34:55.296040569Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)\n","stream":"stdout","time":"2021-12-03T08:34:55.296044409Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)\n","stream":"stdout","time":"2021-12-03T08:34:55.296048269Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.29605219Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)\n","stream":"stdout","time":"2021-12-03T08:34:55.29605611Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.2960602Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.29606436Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.296178971Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.296185821Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.296190051Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)\n","stream":"stdout","time":"2021-12-03T08:34:55.296194181Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.296198081Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)\n","stream":"stdout","time":"2021-12-03T08:34:55.296201921Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.Connectors.executeRootHandler(Connectors.java:330)\n","stream":"stdout","time":"2021-12-03T08:34:55.296205841Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)\n","stream":"stdout","time":"2021-12-03T08:34:55.296209541Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n","stream":"stdout","time":"2021-12-03T08:34:55.296213361Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java)\n","stream":"stdout","time":"2021-12-03T08:34:55.296217131Z"}
+{"log":"\u0009at 068f32d4-f986-493f-9e16-7d29f1bea2b9-- java.lang.Thread.run(Thread.java:748)\n","stream":"stdout","time":"2021-12-03T08:34:55.296220921Z"}
+{"log":"Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement\n","stream":"stdout","time":"2021-12-03T08:34:55.296224551Z"}
+{"log":"\u0009at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)\n","stream":"stdout","time":"2021-12-03T08:34:55.296228181Z"}
+{"log":"\u0009at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)\n","stream":"stdout","time":"2021-12-03T08:34:55.296231861Z"}
+{"log":"\u0009at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)\n","stream":"stdout","time":"2021-12-03T08:34:55.296235551Z"}
+{"log":"\u0009at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)\n","stream":"stdout","time":"2021-12-03T08:34:55.296239211Z"}
+{"log":"\u0009at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)\n","stream":"stdout","time":"2021-12-03T08:34:55.296344162Z"}
+{"log":"\u0009at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)\n","stream":"stdout","time":"2021-12-03T08:34:55.296348512Z"}
+{"log":"\u0009at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42)\n","stream":"stdout","time":"2021-12-03T08:34:55.296352842Z"}
+{"log":"\u0009at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2919)\n","stream":"stdout","time":"2021-12-03T08:34:55.296356602Z"}
+{"log":"\u0009at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3490)\n","stream":"stdout","time":"2021-12-03T08:34:55.296360272Z"}
+{"log":"\u0009at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.296367012Z"}
+{"log":"\u0009at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:626)\n","stream":"stdout","time":"2021-12-03T08:34:55.296370772Z"}
+{"log":"\u0009at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:280)\n","stream":"stdout","time":"2021-12-03T08:34:55.296374422Z"}
+{"log":"\u0009at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:261)\n","stream":"stdout","time":"2021-12-03T08:34:55.296378182Z"}
+{"log":"\u0009at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:306)\n","stream":"stdout","time":"2021-12-03T08:34:55.296381782Z"}
+{"log":"\u0009at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318)\n","stream":"stdout","time":"2021-12-03T08:34:55.296385343Z"}
+{"log":"\u0009at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275)\n","stream":"stdout","time":"2021-12-03T08:34:55.296389053Z"}
+{"log":"\u0009at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182)\n","stream":"stdout","time":"2021-12-03T08:34:55.296392773Z"}
+{"log":"\u0009at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113)\n","stream":"stdout","time":"2021-12-03T08:34:55.296396483Z"}
+{"log":"\u0009at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)\n","stream":"stdout","time":"2021-12-03T08:34:55.296400253Z"}
+{"log":"\u0009at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)\n","stream":"stdout","time":"2021-12-03T08:34:55.296404003Z"}
+{"log":"\u0009at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)\n","stream":"stdout","time":"2021-12-03T08:34:55.296407693Z"}
+{"log":"\u0009at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)\n","stream":"stdout","time":"2021-12-03T08:34:55.296516674Z"}
+{"log":"\u0009at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:778)\n","stream":"stdout","time":"2021-12-03T08:34:55.296520754Z"}
+{"log":"\u0009at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:751)\n","stream":"stdout","time":"2021-12-03T08:34:55.296524374Z"}
+{"log":"\u0009at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:756)\n","stream":"stdout","time":"2021-12-03T08:34:55.296527974Z"}
+{"log":"\u0009at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)\n","stream":"stdout","time":"2021-12-03T08:34:55.296531584Z"}
+{"log":"\u0009at org.jboss.as.jpa.container.AbstractEntityManager.persist(AbstractEntityManager.java:580)\n","stream":"stdout","time":"2021-12-03T08:34:55.296535264Z"}
+{"log":"\u0009at com.mb.ngp.p9.dao.BaseDAO.create(BaseDAO.java:86)\n","stream":"stdout","time":"2021-12-03T08:34:55.296538954Z"}
+{"log":"\u0009at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n","stream":"stdout","time":"2021-12-03T08:34:55.296543034Z"}
+{"log":"\u0009at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n","stream":"stdout","time":"2021-12-03T08:34:55.296546634Z"}
+{"log":"\u0009at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296550214Z"}
+{"log":"\u0009at java.lang.reflect.Method.invoke(Method.java:498)\n","stream":"stdout","time":"2021-12-03T08:34:55.296553884Z"}
+{"log":"\u0009at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)\n","stream":"stdout","time":"2021-12-03T08:34:55.296557444Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296563864Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)\n","stream":"stdout","time":"2021-12-03T08:34:55.296567554Z"}
+{"log":"\u0009at org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:90)\n","stream":"stdout","time":"2021-12-03T08:34:55.296571234Z"}
+{"log":"\u0009at org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:101)\n","stream":"stdout","time":"2021-12-03T08:34:55.296575064Z"}
+{"log":"\u0009at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)\n","stream":"stdout","time":"2021-12-03T08:34:55.296578754Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296684435Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.296688085Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296691895Z"}
+{"log":"\u0009at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)\n","stream":"stdout","time":"2021-12-03T08:34:55.296695425Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296699135Z"}
+{"log":"\u0009at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)\n","stream":"stdout","time":"2021-12-03T08:34:55.296702695Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296706445Z"}
+{"log":"\u0009at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)\n","stream":"stdout","time":"2021-12-03T08:34:55.296710035Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296713665Z"}
+{"log":"\u0009at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)\n","stream":"stdout","time":"2021-12-03T08:34:55.296717246Z"}
+{"log":"\u0009at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)\n","stream":"stdout","time":"2021-12-03T08:34:55.296720926Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296725246Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)\n","stream":"stdout","time":"2021-12-03T08:34:55.296728896Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296732576Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)\n","stream":"stdout","time":"2021-12-03T08:34:55.296736156Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296739896Z"}
+{"log":"\u0009at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)\n","stream":"stdout","time":"2021-12-03T08:34:55.296743516Z"}
+{"log":"\u0009at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:332)\n","stream":"stdout","time":"2021-12-03T08:34:55.296856257Z"}
+{"log":"\u0009at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:240)\n","stream":"stdout","time":"2021-12-03T08:34:55.296861427Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296868277Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)\n","stream":"stdout","time":"2021-12-03T08:34:55.296871907Z"}
+{"log":"\u0009at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.296875597Z"}
+{"log":"\u0009at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)\n","stream":"stdout","time":"2021-12-03T08:34:55.296879457Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296883197Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)\n","stream":"stdout","time":"2021-12-03T08:34:55.296886807Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296890657Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)\n","stream":"stdout","time":"2021-12-03T08:34:55.296894257Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296897957Z"}
+{"log":"\u0009at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)\n","stream":"stdout","time":"2021-12-03T08:34:55.296901577Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296905287Z"}
+{"log":"\u0009at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)\n","stream":"stdout","time":"2021-12-03T08:34:55.296908867Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.296912617Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.296916987Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.297022728Z"}
+{"log":"\u0009at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)\n","stream":"stdout","time":"2021-12-03T08:34:55.297026728Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.297030418Z"}
+{"log":"\u0009at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)\n","stream":"stdout","time":"2021-12-03T08:34:55.297034038Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.297037768Z"}
+{"log":"\u0009at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)\n","stream":"stdout","time":"2021-12-03T08:34:55.297041368Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.297045068Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)\n","stream":"stdout","time":"2021-12-03T08:34:55.297048689Z"}
+{"log":"\u0009at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:609)\n","stream":"stdout","time":"2021-12-03T08:34:55.297052489Z"}
+{"log":"\u0009at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)\n","stream":"stdout","time":"2021-12-03T08:34:55.297056549Z"}
+{"log":"\u0009at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)\n","stream":"stdout","time":"2021-12-03T08:34:55.297063409Z"}
+{"log":"\u0009at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)\n","stream":"stdout","time":"2021-12-03T08:34:55.297067119Z"}
+{"log":"\u0009at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)\n","stream":"stdout","time":"2021-12-03T08:34:55.297070779Z"}
+{"log":"\u0009at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)\n","stream":"stdout","time":"2021-12-03T08:34:55.297074379Z"}
+{"log":"\u0009at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.297078149Z"}
+{"log":"\u0009at com.mb.ngp.p9.dao.puma.PumaDAO$$$view45.create(Unknown Source)\n","stream":"stdout","time":"2021-12-03T08:34:55.297081869Z"}
+{"log":"\u0009at com.mb.ngp.p9.tiger.backend.PaymentRequest.createPaymentRequest(PaymentRequest.java:566)\n","stream":"stdout","time":"2021-12-03T08:34:55.297085429Z"}
+{"log":"\u0009at com.mb.ngp.p9.tiger.backend.PaymentRequest.handleRequest(PaymentRequest.java:296)\n","stream":"stdout","time":"2021-12-03T08:34:55.29719158Z"}
+{"log":"\u0009at com.mb.ngp.p9.tiger.ws.servlets.PumaInitServlet.doPost(PumaInitServlet.java:97)\n","stream":"stdout","time":"2021-12-03T08:34:55.29719531Z"}
+{"log":"\u0009at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)\n","stream":"stdout","time":"2021-12-03T08:34:55.29719893Z"}
+{"log":"\u0009at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)\n","stream":"stdout","time":"2021-12-03T08:34:55.29720247Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)\n","stream":"stdout","time":"2021-12-03T08:34:55.29720608Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)\n","stream":"stdout","time":"2021-12-03T08:34:55.29721036Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:65)\n","stream":"stdout","time":"2021-12-03T08:34:55.29721421Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)\n","stream":"stdout","time":"2021-12-03T08:34:55.29721783Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)\n","stream":"stdout","time":"2021-12-03T08:34:55.29722161Z"}
+{"log":"\u0009at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.29722538Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)\n","stream":"stdout","time":"2021-12-03T08:34:55.29722906Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)\n","stream":"stdout","time":"2021-12-03T08:34:55.2972329Z"}
+{"log":"\u0009at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.29723679Z"}
+{"log":"\u0009at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)\n","stream":"stdout","time":"2021-12-03T08:34:55.29724043Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)\n","stream":"stdout","time":"2021-12-03T08:34:55.29724426Z"}
+{"log":"\u0009at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)\n","stream":"stdout","time":"2021-12-03T08:34:55.29724816Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)\n","stream":"stdout","time":"2021-12-03T08:34:55.297358281Z"}
+{"log":"\u0009at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)\n","stream":"stdout","time":"2021-12-03T08:34:55.297363421Z"}
+{"log":"\u0009at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.297367271Z"}
+{"log":"\u0009at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.297371141Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)\n","stream":"stdout","time":"2021-12-03T08:34:55.297374751Z"}
+{"log":"\u0009at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.297378471Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)\n","stream":"stdout","time":"2021-12-03T08:34:55.297382122Z"}
+{"log":"\u0009at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.297386442Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)\n","stream":"stdout","time":"2021-12-03T08:34:55.297390202Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.297393852Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)\n","stream":"stdout","time":"2021-12-03T08:34:55.297397512Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)\n","stream":"stdout","time":"2021-12-03T08:34:55.297401132Z"}
+{"log":"\u0009at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)\n","stream":"stdout","time":"2021-12-03T08:34:55.297404812Z"}
+{"log":"\u0009at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)\n","stream":"stdout","time":"2021-12-03T08:34:55.297408512Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)\n","stream":"stdout","time":"2021-12-03T08:34:55.297412222Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.297416042Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.297420112Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.297424052Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.297449102Z"}
+{"log":"\u0009at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1501)\n","stream":"stdout","time":"2021-12-03T08:34:55.297453072Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)\n","stream":"stdout","time":"2021-12-03T08:34:55.297456972Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)\n","stream":"stdout","time":"2021-12-03T08:34:55.297465692Z"}
+{"log":"\u0009at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)\n","stream":"stdout","time":"2021-12-03T08:34:55.297469472Z"}
+{"log":"\u0009at io.undertow.server.Connectors.executeRootHandler(Connectors.java:330)\n","stream":"stdout","time":"2021-12-03T08:34:55.297473132Z"}
+{"log":"\u0009at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)\n","stream":"stdout","time":"2021-12-03T08:34:55.297477332Z"}
+{"log":"\u0009at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n","stream":"stdout","time":"2021-12-03T08:34:55.297480932Z"}
+{"log":"\u0009at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java)\n","stream":"stdout","time":"2021-12-03T08:34:55.297484592Z"}
+{"log":"\u0009at java.lang.Thread.run(Thread.java:748)\n","stream":"stdout","time":"2021-12-03T08:34:55.297488182Z"}
+{"log":"Caused by: org.postgresql.util.PSQLException: ERROR: column \"identity_token_id\" of relation \"puma\" does not exist\n","stream":"stdout","time":"2021-12-03T08:34:55.297491653Z"}
+{"log":"  Position: 103\n","stream":"stdout","time":"2021-12-03T08:34:55.297495743Z"}
+{"log":"\u0009at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)\n","stream":"stdout","time":"2021-12-03T08:34:55.297499143Z"}
+{"log":"\u0009at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)\n","stream":"stdout","time":"2021-12-03T08:34:55.297502803Z"}
+{"log":"\u0009at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)\n","stream":"stdout","time":"2021-12-03T08:34:55.297506413Z"}
+{"log":"\u0009at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)\n","stream":"stdout","time":"2021-12-03T08:34:55.297528323Z"}
+{"log":"\u0009at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)\n","stream":"stdout","time":"2021-12-03T08:34:55.297532633Z"}
+{"log":"\u0009at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)\n","stream":"stdout","time":"2021-12-03T08:34:55.297536213Z"}
+{"log":"\u0009at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)\n","stream":"stdout","time":"2021-12-03T08:34:55.297539783Z"}
+{"log":"\u0009at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)\n","stream":"stdout","time":"2021-12-03T08:34:55.297543413Z"}
+{"log":"\u0009at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)\n","stream":"stdout","time":"2021-12-03T08:34:55.297547083Z"}
+{"log":"\u0009... 127 more\n","stream":"stdout","time":"2021-12-03T08:34:55.297550773Z"}
+{"log":"\n","stream":"stdout","time":"2021-12-03T08:34:55.297554173Z"}
+{"log":"2021-12-03 09:34:55,300 ERROR [PaymentRequest] (default task-27) 068f32d4-f986-493f-9e16-7d29f1bea2b9--Cannot create request com.mb.ngp.ejb.exception.DAOException: javax.persistence.PersistenceException: 068f32d4-f986-493f-9e16-7d29f1bea2b9--org.hibernate.exception.SQLGrammarException: could not execute statement\n","stream":"stdout","time":"2021-12-03T08:34:55.300336588Z"}
+{"log":"2021-12-03 09:34:55,307 INFO  [stdout] (default task-26) AbstractTestServlet PSP API response: \u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cOBT version=\"1.00.000\"\u003e\u003cUniqueID\u003e068f32d4-f986-493f-9e16-7d29f1bea2b9\u003c/UniqueID\u003e\u003cErrorCode\u003e99\u003c/ErrorCode\u003e\u003cErrorMessage\u003e\u003c![CDATA[Internal server error.]]\u003e\u003c/ErrorMessage\u003e\u003c/OBT\u003e\n","stream":"stdout","time":"2021-12-03T08:34:55.308033498Z"}
+{"log":"2021-12-03 09:35:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:35:49.947251656Z"}
+{"log":"2021-12-03 09:36:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:36:49.948628934Z"}
+{"log":"2021-12-03 09:37:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:37:49.950122172Z"}
+{"log":"2021-12-03 09:38:55,300 ERROR [PaymentRequest] (default task-27) 068f32d4-f986-493f-9e16-7d29f1bea2b9--Cannot create request com.mb.ngp.ejb.exception.DAOException: javax.persistence.PersistenceException: 068f32d4-f986-493f-9e16-7d29f1bea2b9--org.hibernate.exception.SQLGrammarException: could not execute statement\n","stream":"stdout","time":"2021-12-03T08:34:55.300336588Z"}
+{"log":"2021-12-03 09:38:55,307 INFO  [stdout] (default task-26) AbstractTestServlet PSP API response: \u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cOBT version=\"1.00.000\"\u003e\u003cUniqueID\u003e068f32d4-f986-493f-9e16-7d29f1bea2b9\u003c/UniqueID\u003e\u003cErrorCode\u003e99\u003c/ErrorCode\u003e\u003cErrorMessage\u003e\u003c![CDATA[Internal server error.]]\u003e\u003c/ErrorMessage\u003e\u003c/OBT\u003e\n","stream":"stdout","time":"2021-12-03T08:34:55.308033498Z"}
+{"log":"2021-12-03 09:38:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:35:49.947251656Z"}
+{"log":"2021-12-03 09:38:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:36:49.948628934Z"}
+{"log":"2021-12-03 09:38:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:37:49.950122172Z"}
+{"log":"2021-12-04 09:38:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:35:49.947251656Z"}
+{"log":"2021-12-04 09:38:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:36:49.948628934Z"}
+{"log":"2021-12-04 09:38:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:37:49.950122172Z"}
+{"log":"2021-12-05 09:38:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:35:49.947251656Z"}
+{"log":"2021-12-05 09:38:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:36:49.948628934Z"}
+{"log":"2021-12-05 09:38:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","time":"2021-12-03T08:37:49.950122172Z"}

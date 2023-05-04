@@ -1,0 +1,6 @@
+2021-12-03T08:37:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-03 09:38:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}
+2021-12-03T08:35:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-04 09:38:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}
+2021-12-03T08:36:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-04 09:38:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}
+2021-12-03T08:37:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-04 09:38:49,949 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}
+2021-12-03T08:35:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-05 09:38:49,947 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}
+2021-12-03T08:36:49+00:00	kubernetes.var.log.testlog-jboss.log	{"log":"2021-12-05 09:38:49,948 INFO  [SeleniumCache] (Thread-110) Set server ID to `null`\n","stream":"stdout","sourceFile":"/var/log/testlog-jboss.log"}

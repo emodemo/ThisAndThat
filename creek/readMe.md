@@ -8,6 +8,8 @@ Unfinished Data Structures and Algorithm for Graphs (mainly, but not only).
 * Point Quad Tree
 * Point Tree: multi-dimensional implementation, where 2D == Point-QuadTree, 3D == Point-Octree, etc...
 * Graph: all combinations of un/directed, un/weighted
+* TODO: https://en.wikipedia.org/wiki/Centrality
+* dataframes - most likely NO
 
 ## Algorithms
 

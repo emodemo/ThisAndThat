@@ -1,0 +1,19 @@
+
+ingress:
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: 'admin.sandbox.rt.dw-cloud.net'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:232570246578:certificate/8922aa1d-4630-48e3-a7c4-3f24bbaaa4d8
+    alb.ingress.kubernetes.io/group.name: "paysafe-rt-integration-admin"
+    alb.ingress.kubernetes.io/scheme: internal
+    alb.ingress.kubernetes.io/security-groups: sg-02c74ff2fea29db76
+    alb.ingress.kubernetes.io/subnets: subnet-07337b85934332565, subnet-01a959aad18a4321c
+  hosts:
+    - paths:
+        - path: /*
+          name: ssl-redirect
+          port: use-annotation
+        - path: /*
+          name: "<SERVICE_NAME>"
+          port: "80"
+
+

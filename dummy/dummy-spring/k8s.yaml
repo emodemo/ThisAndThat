@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummy-app-deployment-v1 # dummy-spring-app
+  labels: # optional
+    app: dummy-app-v1
+spec:
+  replicas: 1
+  selector: # match pods with the same label (template:metadata:label), same as with service selector
+    matchLabels:
+      app: dummy-app-v1
+  template: # the POD within a deployment
+    metadata:
+      labels:
+        app: dummy-app-v1
+    spec:
+      containers:
+        - name: dummy-app-container-v1 # dummy-spring-app
+          image: dummy-spring:1.0.0
+          ports:
+            - containerPort: 8000
+          env:
+            - name: APP_ECHO
+              value: "version 1"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-app-v1-service
+spec:
+  selector: # match pods with the same label (deployment:template:metadata:label), same as with deployment:template selector
+    app: dummy-app-v1
+  ports:
+    - port: 8082
+      protocol: TCP
+      targetPort: 8000 # the port of the pod, must be the same as containerPort
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dummy-app-v1-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /api/echo
+            pathType: Prefix
+            backend:
+              service:
+                name: dummy-app-v1-service
+                port:
+                  number: 8082
+    - http:
+        paths:
+          - path: /api/echov2
+            pathType: Prefix
+            backend:
+              service:
+                name: dummy-app-v1-service
+                port:
+                  number: 8082
