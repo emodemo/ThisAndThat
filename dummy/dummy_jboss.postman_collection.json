@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "edcecc7d-9123-46a3-a913-2b5fd04758c8",
+		"name": "dummy_jboss",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/people/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"people",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grades",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grades",
+							"type": "file",
+							"src": "/C:/works/dummy/dummy_spring/src/test/resources/grades.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/people/grades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"people",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/people/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sync/async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/sync/sync/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"sync",
+						"sync",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "healthservlet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/healthservlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dummy-jboss-1.0.0",
+						"api",
+						"healthservlet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

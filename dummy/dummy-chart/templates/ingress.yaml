@@ -50,3 +50,12 @@ spec:
   {{- end }}
   {{- end }}
 {{- end }}
+
+{{/*data:*/}}
+{{/*  {{- if .Values.microservice.bulkhead.enabled }}*/}}
+{{/*  {{- range $instance := .Values.microservice.bulkhead.instances }}*/}}
+{{/*    {{ print "RESILIENCE4J_BULKHEAD_INSTANCES_" .name "_MAX_WEIGHT_DURATION" }}: {{ print .maxWaitDuration | quote }}*/}}
+{{/*    {{ print "RESILIENCE4J_BULKHEAD_INSTANCES_" .name "_MAX_CONCURRENT_CALLS" }}: {{ print .maxConcurrentCalls }}*/}}
+{{/*  {{- end }}*/}}
+{{/*  {{- end }}*/}}
+{{/*  */}}

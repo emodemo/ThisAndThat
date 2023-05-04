@@ -73,5 +73,10 @@ public class NotificationController {
             boolean verify = signedJWT.verify(verifier);
             System.out.println(verify);
         }
+
+//        var messageDigest = MessageDigest.getInstance("SHA256");
+//        var digest = messageDigest.digest(httpBody.toString().getBytes());
+//        var hexDigest = HexFormat.of().formatHex(digest);
+
     }
 }

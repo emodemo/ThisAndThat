@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "16db9b2c-1eab-4101-8164-f91e4b0339ae",
+		"name": "dummy_spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/subjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/people/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/people/1/grades",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"1",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "whatever",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/whatever",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"whatever"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grades",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grades",
+							"type": "file",
+							"src": "/C:/works/dummy/dummy_spring/src/test/resources/grades.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/people/grades",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sleep_ms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/sleep/5000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleep",
+						"5000",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "echo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/echo/aaa",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"echo",
+						"aaa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "people pagable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/people/v3a?name=Peter&id=5&sort=id,desc",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"v3a"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Peter"
+						},
+						{
+							"key": "id",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "id,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "yapilytest1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/authconsent/test3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"authconsent",
+						"test3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notifications - ec with jwt payload",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "privateKey",
+							"value": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgt8JnaWf5XmBGYUN/\nmGa7sT+ae1RNlbRjtqSAsTlH4wOhRANCAAST5tOA3YltsHExe/vvvtgjvDi5mOC6\nkSudObSX8bUefNSQ/bLdCA6+Cn0UN7wklfIVzlqJIxu8BXiMOjq0vcHe\n-----END PRIVATE KEY-----",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"digest\": \"C1073039BD591D97D5991CFF6583D091AABF2005C99EC5523BE3C37EA8F6381A\",\r\n  \"enc\": \"SHA256\",\r\n  \"exp\": 1647970592,\r\n  \"iat\": 1647970291,\r\n  \"jti\": \"553a3ed6-914a-4062-b7e6-d7405bb2fb9d\"\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "ES256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "secret",
+							"value": "secret",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "enc",
+						"value": "SHA256",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n   \"id\":\"2124343e-7b92-4da8-8424-52c6a7e3a56d\",\r\n   \"eventType\":\"PAYMENT_STATUS_COMPLETED\",\r\n   \"applicationId\":\"d60ebb6f-8935-4e58-999c-966fe6a05ef5\",\r\n   \"organisationId\":\"41a3c16b-11f5-43fa-90ff-eff63ecb8eeb\",\r\n   \"institutionId\":\"mock-sandbox\",\r\n   \"eventPayload\":{\r\n      \"id\":\"PDC_35c0ab52-6cd0-4b98-ab78-9e2611151bb6\",\r\n      \"institutionConsentId\":\"PDC_4e6d9667-baed-4437-b50a-29a24dd1cd56\",\r\n      \"paymentIdempotencyId\":\"c23b0f0baa464dc781005cfc07e5aed4\",\r\n      \"paymentLifecycleId\":\"4dea5e70cfc500187c\",\r\n      \"status\":\"COMPLETED\",\r\n      \"statusDetails\":{\r\n         \"status\":\"COMPLETED\",\r\n         \"statusUpdateDate\":\"2020-04-30T10:26:44.876Z\",\r\n         \"isoStatus\": {\r\n            \"code\":\"ACSC\",\r\n            \"name\":\"AcceptedSettlementCompleted\"\r\n         }\r\n      },\r\n      \"payeeDetails\":{\r\n         \"name\":\"TestPayee\",\r\n         \"accountIdentifications\":[\r\n            {\r\n               \"type\":\"SORT_CODE\",\r\n               \"identification\":\"402502\"\r\n            },\r\n            {\r\n               \"type\":\"ACCOUNT_NUMBER\",\r\n               \"identification\":\"52461838\"\r\n            }\r\n         ]\r\n      },\r\n      \"reference\":\"n\",\r\n      \"amount\":10.0,\r\n      \"currency\":\"GBP\",\r\n      \"amountDetails\":{\r\n         \"amount\":10.0,\r\n         \"currency\":\"GBP\"\r\n      },\r\n      \"createdAt\":\"2020-04-30T10:26:44.879Z\"\r\n   },\r\n   \"objectId\":\"PDC_35c0ab52-6cd0-4b98-ab78-9e2611151bb6\",\r\n   \"consentToken\":\"eyJraWQiOiI3MmFmYjM5MS03MzRiLTQ4OTEtOWM4NC01OTgzODdiNmVkMWIiLCJhbGciOiJFUzI1NiJ9.eyJJTlNUSVRVVElPTiI6Im1vY2stc2FuZGJveCIsIkNPTlNFTlQiOiJmYTkxZWZmYy0yNzFiLTQ0ZGUtYmUxMC1kY2Y3ZmNiM2ZiMmQiLCJBUFBMSUNBVElPTl9VU0VSX0lEIjoidXNlcl8wLjQwNDQwOTgxODAxNzQ4MjY2IiwiVVNFUiI6Ijc1NGY0NTEzLTk2YmYtNDQyYy05MGUwLTc5OGMwNTZhNzYzNSJ9.q1lu8sfN2CfOILdyzm5949PI3quBZe0bRLZzpi-xZVBZviozXBiMXYhycigsHHeJkoC2NisBYwqfe5-GLD31aQ\",\r\n   \"created\":\"2022-05-11T13:57:07.638Z\",\r\n   \"url\":\"https://webhook.site/7304256a-14cb-413c-ac17-d6df48c3dc50\",\r\n   \"notificationStatus\":\"DELIVERED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/webhooks/133",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"webhooks",
+						"133"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

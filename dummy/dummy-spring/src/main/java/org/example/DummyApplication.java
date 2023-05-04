@@ -15,7 +15,7 @@ import java.util.List;
 import static java.util.Arrays.asList;
 
 @SpringBootApplication
-@ConfigurationPropertiesScan // added for @ConfigurationProperties
+@ConfigurationPropertiesScan() // added for @ConfigurationProperties
 public class DummyApplication {
 
     public static void main(String[] args) {
