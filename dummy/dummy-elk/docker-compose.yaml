@@ -1,0 +1,13 @@
+## not finished
+## see here https://mpolinowski.github.io/docs/DevOps/Elasticsearch/2019-09-08--elasticsearch_7-5_docker/2019-09-08/
+version: '3.9'
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch:8.7.1
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      discovery.type: single-node

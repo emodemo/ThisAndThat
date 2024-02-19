@@ -5,6 +5,7 @@
 .gitattributes
 .classpath
 .project
+**/resources/index/
 # produced from eclipse
 .metadata/
 .settings/

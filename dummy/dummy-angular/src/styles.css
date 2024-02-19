@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@paysafe-ui/components/prebuilt-themes/rapid';
+/*@import 'styles/includes.scss';*/
+
+/*html {*/
+/*  font-size: 16px;*/
+/*  font-family: Source Sans Pro;*/
+/*}*/
+
+/*body {*/
+/*  margin: 0;*/
+/*  background-color: $background-color-light;*/
+
+/*  @media (min-width: 1024px) {*/
+/*    background-color: $background-color-dark;*/
+/*  }*/
+/*}*/
+
+/*a {*/
+/*  text-decoration: none;*/
+/*  color: inherit;*/
+/*  cursor: pointer;*/
+/*  outline: none;*/
+/*}*/

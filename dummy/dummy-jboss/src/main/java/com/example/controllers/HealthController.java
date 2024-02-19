@@ -4,8 +4,11 @@ import javax.annotation.PostConstruct;
 import javax.ejb.Stateless;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
@@ -28,8 +31,8 @@ public class HealthController {
 	@GET
 	@Path("{id}")
 	@Produces({APPLICATION_XML, APPLICATION_JSON})
-	public Response doubleMe(@FormParam("id")int i){
-		return Response.ok().entity(i^2).build();
+	public Response doubleMe(@PathParam("id") int i, @QueryParam("whatever") String whatever, @HeaderParam("myHeader") String header){
+		return Response.ok().entity(whatever + i + header).build();
 	}
 
 }

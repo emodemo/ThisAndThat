@@ -6,16 +6,11 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.function.Supplier;
 
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class WrapperApi implements IApi{
 
 	private final IApi delegate;
 	private final Bulkhead bulkhead;
-
-	WrapperApi(IApi delegate, Bulkhead bulkhead) {
-		this.delegate = delegate;
-		this.bulkhead = bulkhead;
-	}
 
 	@Override
 	public String doSomething(String text) {

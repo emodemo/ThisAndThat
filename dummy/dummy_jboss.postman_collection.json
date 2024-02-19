@@ -9,9 +9,16 @@
 			"name": "health",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "myHeader",
+						"value": "someHeaderValue",
+						"type": "default",
+						"disabled": true
+					}
+				],
 				"url": {
-					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/health",
+					"raw": "http://localhost:8080/dummy-jboss-1.0.0/api/health/1?whatever=tralala",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -20,7 +27,14 @@
 					"path": [
 						"dummy-jboss-1.0.0",
 						"api",
-						"health"
+						"health",
+						"1"
+					],
+					"query": [
+						{
+							"key": "whatever",
+							"value": "tralala"
+						}
 					]
 				}
 			},

@@ -1,0 +1,67 @@
+// either:
+// apply (plugin: 'java')
+// or
+plugins {
+   id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+description = """
+Example project for Gradle
+
+plugin -> adds preconfigured tasks
+"""
+
+//include 'core', 'ui', 'util'
+
+//task hello {
+tasks.register('hello') {
+    description = "my hello task" // optional
+    group = 'hello-emo' // optional
+    doFirst {
+        println("first step")
+    }
+    doLast {
+        println("last step")
+    }
+    println "configuration phase - always get printed even though not invoked"
+}
+tasks.register('bye') {
+    doLast {
+        println("say bye")
+    }
+//    dependsOn('hello')
+    dependsOn hello
+}
+// bye.dependsOn hello // alternative
+
+//useBye = project.hasProperty('useBye')
+// OVERRIDE STEP
+bye.doFirst {
+    // conditional v1
+  //  if(!useBye){
+        println("before bye") // useful when overriding inherited tasks from plugins
+  //  }
+}
+// conditional v2
+//bye.onlyIf {
+//    project.hasProperty('useBye')
+//}
+
+
+
+
+dependencies {
+    // comes from java plugin
+    implementation 'io.github.resilience4j:resilience4j-bulkhead:2.0.2'
+}
+
+// configurations.all , runtime, implementation, ...
+//configurations.configureEach {
+//    exclude group: 'com.google.code.gson', module: 'gson'
+//    force specific transitive dependency :
+//    resolutionStrategy.force 'com.google.code.gson:gson:2.8.1'
+//}

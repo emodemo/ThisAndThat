@@ -1,0 +1,2 @@
+// the default is the folder name
+rootProject.name = "gradle-template"

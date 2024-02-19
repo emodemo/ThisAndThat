@@ -4,11 +4,12 @@ plugins {
 
 group 'org.emodemo'
 version '1.0'
+sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'junit:junit:4.13.1'
 }

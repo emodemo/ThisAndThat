@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class JdbcConnectionTest {
 
-	private static final String DB = "jdbc:postgresql://ngp-stage-dublin-cluster.cluster-cikeeyofp7nd.eu-west-1.rds.amazonaws.com:5422/dev";
+	private static final String DB = "jdbc:postgresql://<MyDB>:5422/dev";
 	private static final String DB_OPTIONS = "?readOnly=true&readOnlyMode=always";
 	private static final String CREDENTIALS = "p9";
 	private static final String SQL = "INSERT INTO p9.bank_logo (logo_name, image_data) values ('mylogo' , 'your_logo')";

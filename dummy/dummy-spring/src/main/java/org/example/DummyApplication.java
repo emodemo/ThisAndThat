@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import static java.util.Arrays.asList;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan() // added for @ConfigurationProperties
+@EnableScheduling
 public class DummyApplication {
 
     public static void main(String[] args) {
@@ -35,7 +37,8 @@ public class DummyApplication {
                     new Person("Steven"),
                     new Person("John"),
                     new Person("Peter"),
-                    new Person("Aaron")
+                    new Person("Aaron"),
+                    new Person("")
             );
 
             personRepository.saveAll(people);

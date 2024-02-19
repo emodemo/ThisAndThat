@@ -4,7 +4,9 @@ from scipy.integrate import quad
 from scipy.stats import norm
 import numpy as np
 
-# Thorp focuses on annual returns and suggests modeling P(r) as a normal distribution truncated at m +/- 3*st.
+# Thorp focuses on annual excess returns and suggests modeling P(r) as a normal distribution truncated at m +/- 3*st.
+# TODO: with lognormal returns instead of normal, as per Thorp - The Kelly Criterion And The Stock Market
+# TODO: probability of negative excess return
 def eee(l,f,s,m,st):
     print(str(l))
     return np.log(1+f*l)*norm.pdf(l,m,st)

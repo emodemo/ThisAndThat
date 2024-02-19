@@ -1,0 +1,109 @@
+@SpringBootApplication
+public class Oauth2ServerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Oauth2ServerApplication.class, args);
+    }
+
+    @RestController
+    @RequestMapping("api/resources")
+    public static class ResourceController {
+
+        @GetMapping
+        public Map<String, String> greeting(Principal principal) {
+            return Collections.singletonMap("message", "hello " + principal.getName());
+        }
+    }
+
+    @Repository
+    public static class MerchantRepository implements RegisteredClientRepository {
+
+        private static List<RegisteredClient> registeredClients = Collections.singletonList(
+                RegisteredClient.withId(UUID.randomUUID().toString())
+                        .clientId("articles-client")
+                        .clientSecret("{noop}secret")
+                        .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
+                        .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
+                        .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+                        .build()
+        );
+
+        @Override
+        public void save(RegisteredClient registeredClient) {
+            registeredClients.add(registeredClient);
+        }
+
+        @Override
+        public RegisteredClient findById(String id) {
+            return registeredClients.stream()
+                    .filter(x -> Objects.equals(x.getId(), id))
+                    .findAny()
+                    .orElse(null);
+        }
+
+        @Override
+        public RegisteredClient findByClientId(String clientId) {
+            return registeredClients.stream()
+                    .filter(x -> Objects.equals(x.getClientId(), clientId))
+                    .findAny()
+                    .orElse(null);
+        }
+    }
+
+    @EnableWebSecurity
+    @Configuration
+    public static class ApplicationSecurityConfiguration {
+
+        @Bean
+        SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+            return httpSecurity
+                    .authorizeHttpRequests(httpRequests -> httpRequests
+                            .requestMatchers("/oauth2/**").permitAll()
+                            .anyRequest().permitAll()
+                    )
+                    .oauth2ResourceServer(x -> x
+                            .jwt()
+                    )
+                    .build();
+        }
+
+//        @Bean // TODO: converter to support JWT -> Merchant object, implementing Principal
+//        Converter<Jwt, RegisteredClient> jwtConverter(MerchantRepository merchantRepository) {
+//            return (source) -> merchantRepository.findByClientId(source.getId());
+//        }
+    }
+
+    @Configuration
+    @Import(OAuth2AuthorizationServerConfiguration.class)
+    public static class OAuth2ServerConfiguration {
+
+        @Bean
+        public JwtDecoder jwtDecoder(JWKSource<SecurityContext> jwkSource) {
+            return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
+        }
+
+        @Bean
+        public JWKSource<SecurityContext> jwkSource() {
+            KeyPair keyPair = generateRsaKey();
+            RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
+            RSAPrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();
+            RSAKey rsaKey = new RSAKey.Builder(publicKey)
+                    .privateKey(privateKey)
+                    .keyID(UUID.randomUUID().toString())
+                    .build();
+            JWKSet jwkSet = new JWKSet(rsaKey);
+            return new ImmutableJWKSet<>(jwkSet);
+        }
+
+        private static KeyPair generateRsaKey() {
+            try {
+                KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+                keyPairGenerator.initialize(2048);
+                return keyPairGenerator.generateKeyPair();
+            } catch (Exception ex) {
+                throw new IllegalStateException(ex);
+            }
+        }
+    }
+
+}

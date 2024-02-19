@@ -1,7 +1,10 @@
 package com.example;
 
 import com.example.jwt.JwtAuthenticationFilter;
+import jakarta.servlet.Filter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -29,5 +32,15 @@ public class SecurityConfiguration {
 		http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class); // before the usernamePasswordAuthenticationFilter
 
 		return http.build();
+	}
+
+	// @Bean // Alternative way to add a filter
+	public FilterRegistrationBean<Filter> authFilterBean(JwtAuthenticationFilter jwtAuthenticationFilter) {
+		FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
+		registrationBean.setFilter(jwtAuthenticationFilter);
+		registrationBean.setName("jwtAuthenticationFilter");
+		registrationBean.addUrlPatterns("/*");
+		registrationBean.setOrder(SecurityProperties.IGNORED_ORDER);
+		return registrationBean;
 	}
 }

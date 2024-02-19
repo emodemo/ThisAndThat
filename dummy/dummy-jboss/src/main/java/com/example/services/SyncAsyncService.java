@@ -57,7 +57,7 @@ public class SyncAsyncService {
 	}
 
 
-	@Schedule(hour = "*", minute = "*", second = "*/5", persistent = false)
+	//@Schedule(hour = "*", minute = "*", second = "*/5", persistent = false)
 	public void scheduled(){
 		try {
 			System.out.println(" ================= START SCHEDULED ============ " + this + "   " + System.identityHashCode(this));

@@ -12,6 +12,7 @@ public class ScheduledExecutorServiceExample {
 
 	public static void main(String[] args) {
 
+		// without the "submit" part, it will work as @schedule in java ee - aka blocked until previous is done
 		scheduledExecutorService.scheduleAtFixedRate(() -> scheduledExecutorService.submit(
 				logOnException(ScheduledExecutorServiceExample::doSomething)),
 				0,

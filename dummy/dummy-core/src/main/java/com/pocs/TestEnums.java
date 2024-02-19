@@ -1,9 +1,21 @@
 package com.pocs;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestEnums {
 
 	public static void main(String[] args) {
+
+		try {
+			State valid = State.valueOf("VALID");
+			State tralala = State.valueOf("tralala");
+			System.out.println(tralala);
+		} catch (Exception ex) {
+			ex.toString();
+		}
+
 
 		String myString = "my-json-aaa.txt";
 		String myString2 = "my-json-aaa.json";
@@ -36,7 +48,6 @@ public class TestEnums {
 		System.out.println(invalid.equals(invalidStr));
 
 	}
-
 
 	enum State {
 

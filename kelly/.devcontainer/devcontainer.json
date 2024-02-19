@@ -2,9 +2,9 @@
 // https://github.com/microsoft/vscode-dev-containers/blob/master/container-templates/docker-compose/.devcontainer/devcontainer.json
 // https://code.visualstudio.com/docs/remote/containers#_using-an-image-or-dockerfile
 {
-	"name": "emo-python-anaconda",
+	"name": "emo-python3-anaconda",
 	"context": "..",
-	"image": "python3_anaconda",
+	"image": "vsc-emo-python3-anaconda-aa3884a41588bdbc5b4c1fd7392f48d8140f44791df16f7caa3d1808f17a2763",
 	// "dockerFile": "Dockerfile",
 	// "dockerComposeFile": "docker-compose.yml",
 	// "service": "app",

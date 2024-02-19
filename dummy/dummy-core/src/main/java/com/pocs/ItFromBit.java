@@ -2,6 +2,10 @@ package com.pocs;
 
 
 // OR (forcing a bit to 1), AND mask (forcing a bit to 0), or XOR (forcing a bit to toggle)
+// char: 2 byte, int: 4 bytes, long 8 bytes
+// storage is 2^(n-1) for signed, or 2^n for unsigned
+// int: 4 bytes = 32 bits = 2^(32-1) = -2,147,483,648 to 2,147,483,647
+// int: 4 bytes = 32 bits = 2^32 = 4,294,967,296
 public class ItFromBit {
 
 	public static void main(String[] args) {

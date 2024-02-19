@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="DummyJBoss" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 11.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\dev\jdk8u282-b08\jre">
+  <configuration default="false" name="DummyJBoss" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 21.0.1.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../../dev/jdk-11.0.19_7">
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
       <artifact name="dummy-jboss:war exploded">
@@ -10,7 +10,7 @@
       <option name="SERVER" />
       <option name="BINDING_SET_NAME" value="" />
       <option name="DOMAIN" value="false" />
-      <option name="SERVER_GROUP" value="main-server-group" />
+      <option name="SERVER_GROUP" />
       <option name="USERNAME" value="" />
       <option name="CREDENTIAL_ALIAS" />
     </server-settings>

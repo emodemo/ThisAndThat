@@ -1,0 +1,138 @@
+2023-07-18T09:08:41.583501112Z stdout F 11:08:41,577 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 37) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-07-18T09:08:41.631523986Z stdout F 11:08:41,631 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 48) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-07-18T09:08:41.667967416Z stdout F 11:08:41,636 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 38) WFLYRS0016: RESTEasy version 3.15.4.Final-redhat-00001
+2023-07-18T09:08:41.67700897Z stdout F 11:08:41,676 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 43) WFLYNAM0001: Activating Naming Subsystem
+2023-07-18T09:08:41.692091225Z stdout F 11:08:41,691 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 50) WFLYWS0002: Activating WebServices Extension
+2023-07-18T09:08:41.813761487Z stdout F 11:08:41,813 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.SP2-redhat-00001)
+2023-07-18T09:08:41.981165007Z stdout F 11:08:41,980 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 31) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2023-07-18T09:08:42.016656666Z stdout F 11:08:42,016 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.20.SP1-redhat-00001 starting
+2023-07-18T09:08:42.112819035Z stdout F 11:08:42,112 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-07-18T09:08:42.11409612Z stdout F 11:08:42,113 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2023-07-18T09:08:42.115220723Z stdout F 11:08:42,115 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-07-18T09:08:42.23293598Z stdout F 11:08:42,232 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 49) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2023-07-18T09:08:42.358294355Z stdout F 11:08:42,357 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 31) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2023-07-18T09:08:42.55906937Z stdout F 11:08:42,558 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2023-07-18T09:08:42.678722529Z stdout F 11:08:42,678 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 49) WFLYUT0014: Creating file handler for path '/opt/rh/eap7/root/usr/share/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-07-18T09:08:42.903138476Z stdout F 11:08:42,902 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 8 (per class), which isderived from the number of CPUs on this host.
+2023-07-18T09:08:42.914544048Z stdout F 11:08:42,914 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 32 (per class), which is derived from thread worker pool sizing.
+2023-07-18T09:08:42.931779837Z stdout F 11:08:42,931 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2023-07-18T09:08:42.946268374Z stdout F 11:08:42,945 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) Queuing requests.
+2023-07-18T09:08:42.966062802Z stdout F 11:08:42,965 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2023-07-18T09:08:43.168302073Z stdout F 11:08:43,167 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2023-07-18T09:08:43.506052538Z stdout F 11:08:43,505 WARN  [org.jboss.as.remoting] (MSC service thread 1-2) ****** All authentication is ANONYMOUS for org.jboss.as.remoting.RemotingHttpUpgradeService
+2023-07-18T09:08:44.033986684Z stdout F 11:08:44,033 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/rh/eap7/root/usr/share/wildfly/standalone/deployments
+2023-07-18T09:08:44.109759418Z stdout F 2023-07-18 09:08:44,099Z INFO  --- [                                ][C service thread 1-4][                              o.j.a.ejb3]: WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-07-18T09:08:44.118447868Z stdout F 2023-07-18 09:08:44,084Z INFO  --- [                                ][C service thread 1-3][                      o.j.a.s.deployment]: WFLYSRV0027: Starting deployment of "tiger-2.0.0.war" (runtime-name: "tiger-2.0.0.war")
+2023-07-18T09:08:44.210439808Z stdout F 2023-07-18 09:08:44,209Z INFO  --- [                                ][C service thread 1-1][                      o.j.w.c.management]: JBWS022052: Starting JBossWS 5.4.4.Final-redhat-00001 (Apache CXF 3.4.10.redhat-00001)
+2023-07-18T09:08:44.392052402Z stdout F 2023-07-18 09:08:44,391Z INFO  --- [                                ][C service thread 1-3][                   o.j.a.c.s.datasources]: WFLYJCA0001: Bound data source [java:jboss/datasources/p9]
+2023-07-18T09:08:44.392443987Z stdout F 2023-07-18 09:08:44,392Z INFO  --- [                                ][C service thread 1-3][                   o.j.a.c.s.datasources]: WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-07-18T09:08:55.09328065Z stdout F 2023-07-18 09:08:55,092Z INFO  --- [                                ][C service thread 1-2][                               o.j.a.jpa]: WFLYJPA0002: Read persistence.xml for p9
+2023-07-18T09:08:55.803100161Z stdout F 2023-07-18 09:08:55,802Z INFO  --- [                                ][ce Thread Pool -- 53][                               o.j.a.jpa]: WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'tiger-2.0.0.war#p9'
+2023-07-18T09:08:55.914248272Z stdout F 2023-07-18 09:08:55,913Z INFO  --- [                                ][ce Thread Pool -- 53][                     o.h.j.i.u.LogHelper]: HHH000204: Processing PersistenceUnitInfo [
+2023-07-18T09:08:55.914299463Z stdout F         name: p9
+2023-07-18T09:08:55.914305173Z stdout F         ...]
+2023-07-18T09:08:56.154347793Z stdout F 2023-07-18 09:08:56,153Z INFO  --- [                                ][C service thread 1-3][                          o.j.w.deployer]: WFLYWELD0003: Processing welddeployment tiger-2.0.0.war
+2023-07-18T09:08:56.400990511Z stderr F OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2023-07-18T09:08:56.781521017Z stdout F 2023-07-18 09:08:56,781Z INFO  --- [                                ][ce Thread Pool -- 53][                             o.h.Version]: HHH000412: Hibernate Core {5.3.28.Final-redhat-00001}
+2023-07-18T09:08:56.787623368Z stdout F 2023-07-18 09:08:56,787Z INFO  --- [                                ][ce Thread Pool -- 53][                       o.h.c.Environment]: HHH000206: hibernate.properties not found
+2023-07-18T09:08:57.126355824Z stdout F 2023-07-18 09:08:57,125Z INFO  --- [                                ][C service thread 1-3][                       o.h.v.i.u.Version]: HV000001: Hibernate Validator6.0.23.Final-redhat-00001
+2023-07-18T09:08:58.095100837Z stdout F 2023-07-18 09:08:58,093Z INFO  --- [                                ][ce Thread Pool -- 53][                         o.h.a.c.Version]: HCANN000001: Hibernate Commons Annotations {5.0.5.Final-redhat-00002}
+2023-07-18T09:08:59.454661755Z stdout F 2023-07-18 09:08:59,454Z WARN  --- [                                ][C service thread 1-2][                             o.j.a.jaxrs]: WFLYRS0018: Explicit usage ofJackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2023-07-18T09:08:59.698266478Z stdout F 2023-07-18 09:08:59,693Z INFO  --- [                                ][C service thread 1-2][                           o.j.w.Version]: WELD-000900: 3.1.6 (redhat)
+2023-07-18T09:09:00.922041746Z stdout F 2023-07-18 09:09:00,921Z INFO  --- [                                ][ce Thread Pool -- 53][                               o.j.a.jpa]: WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'tiger-2.0.0.war#p9'
+2023-07-18T09:09:02.148283124Z stdout F 2023-07-18 09:09:02,147Z WARN  --- [                                ][ce Thread Pool -- 53][                   o.j.j.c.c.p.s.OnePool]: IJ000407: No lazy enlistment available for p9pool
+2023-07-18T09:09:02.3512217Z stdout F 2023-07-18 09:09:02,350Z INFO  --- [                                ][ce Thread Pool -- 53][                           o.h.d.Dialect]: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-07-18T09:09:03.251748384Z stdout F 2023-07-18 09:09:03,251Z INFO  --- [                                ][ce Thread Pool -- 53][       o.h.e.j.e.i.LobCreatorBuilderImpl]: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2023-07-18T09:09:03.276242091Z stdout F 2023-07-18 09:09:03,275Z INFO  --- [                                ][ce Thread Pool -- 53][                 o.h.t.BasicTypeRegistry]: HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@49aa5bf0
+2023-07-18T09:09:03.295319034Z stdout F 2023-07-18 09:09:03,295Z INFO  --- [                                ][ce Thread Pool -- 53][             o.h.e.b.i.EnversServiceImpl]: Envers integration enabled? :true
+2023-07-18T09:09:03.30608464Z stdout F 2023-07-18 09:09:03,304Z INFO  --- [                                ][ce Thread Pool -- 53][            SensitiveDataTypeContributor]: Registered custom hibernate type: SensitiveDataType
+2023-07-18T09:09:10.326672631Z stdout F 2023-07-18 09:09:10,326Z INFO  --- [                                ][ce Thread Pool -- 53][ o.h.h.i.QueryTranslatorFactoryInitiator]: HHH000397: Using ASTQueryTranslatorFactory
+2023-07-18T09:09:15.638014995Z stdout F 2023-07-18 09:09:15,636Z ERROR --- [                                ][st-tracking-Thread-1][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$951/0x0000000801e9ebf0@57ecfc6a as container is suspended
+2023-07-18T09:09:15.638048036Z stdout F at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.638073846Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.638080706Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.638089076Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.638093896Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.638097796Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.638134707Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.638144787Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.638149857Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.638153217Z stdout F
+2023-07-18T09:09:15.648722079Z stdout F 2023-07-18 09:09:15,648Z ERROR --- [                                ][st-tracking-Thread-2][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$952/0x0000000801e9ee18@6fb476a8 as container is suspended
+2023-07-18T09:09:15.64874912Z stdout F  at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.64879141Z stdout F  at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.64879754Z stdout F  at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.64880219Z stdout F  at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.6488064Z stdout F   at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.64881037Z stdout F  at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.648814111Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.648817981Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.648822331Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.648825951Z stdout F
+2023-07-18T09:09:15.649948064Z stdout F 2023-07-18 09:09:15,649Z ERROR --- [                                ][st-tracking-Thread-4][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$953/0x0000000801e9f040@63360fcb as container is suspended
+2023-07-18T09:09:15.649961684Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.649966264Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.649970564Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.649974964Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.649978834Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.649982384Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.649986314Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.649990464Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.649994574Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.650019925Z stdout F
+2023-07-18T09:09:15.683603234Z stdout F 2023-07-18 09:09:15,683Z ERROR --- [                                ][ice-default-Thread-1][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.dao.bankgroup.BankGroupDAO$$Lambda$954/0x0000000801e9f268@3fb1be8c as container is suspended
+2023-07-18T09:09:15.683650214Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.683666664Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.683672025Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.683676755Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.683681275Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.683685385Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.683689365Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.683693375Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.683703215Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.683707325Z stdout F
+2023-07-18T09:09:15.725091124Z stdout F 2023-07-18 09:09:15,724Z INFO  --- [                                ][ce Thread Pool -- 56][      HealthCheckRegistryContextListener]: com.codahale.metrics.health.HealthCheckRegistry initialized.
+2023-07-18T09:09:15.727004506Z stdout F 2023-07-18 09:09:15,726Z ERROR --- [                                ][st-tracking-Thread-1][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$951/0x0000000801e9ebf0@57ecfc6a as container is suspended
+2023-07-18T09:09:15.727070297Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.727078147Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.727083087Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.727087527Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.727091697Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.727095888Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.727099838Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.727104258Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.727108388Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.727111848Z stdout F
+2023-07-18T09:09:15.827010915Z stdout F 2023-07-18 09:09:15,826Z ERROR --- [                                ][st-tracking-Thread-2][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$951/0x0000000801e9ebf0@57ecfc6a as container is suspended
+2023-07-18T09:09:15.827073696Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.827087646Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.827092146Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.827096226Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.827100386Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.827104286Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.827108146Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.827112256Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.827116417Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.827151387Z stdout F
+2023-07-18T09:09:15.927106185Z stdout F 2023-07-18 09:09:15,926Z ERROR --- [                                ][st-tracking-Thread-5][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$951/0x0000000801e9ebf0@57ecfc6a as container is suspended
+2023-07-18T09:09:15.927173096Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:15.927179716Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:15.927184876Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:15.927189216Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:15.927193486Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:15.927197156Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:15.927200816Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:15.927205166Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:15.927236076Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:15.927241816Z stdout F
+2023-07-18T09:09:16.027112954Z stdout F 2023-07-18 09:09:16,026Z ERROR --- [                                ][st-tracking-Thread-6][                                o.j.a.ee]: WFLYEE0110: Failed to run scheduled task: java.lang.IllegalStateException: WFLYEE0111: Cannot run scheduled task com.mb.ngp.p9.tiger.services.PaymentRequestTracker$$Lambda$951/0x0000000801e9ebf0@57ecfc6a as container is suspended
+2023-07-18T09:09:16.027137644Z stdout F         at org.jboss.as.ee@7.4.8.GA-redhat-00002//org.jboss.as.ee.concurrent.ControlPointUtils$ControlledScheduledRunnable.run(ControlPointUtils.java:184)
+2023-07-18T09:09:16.027152444Z stdout F         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2023-07-18T09:09:16.027157244Z stdout F         at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+2023-07-18T09:09:16.027161814Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.access$201(ManagedScheduledThreadPoolExecutor.java:360)
+2023-07-18T09:09:16.027165834Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.internal.ManagedScheduledThreadPoolExecutor$ManagedScheduledFutureTask.run(ManagedScheduledThreadPoolExecutor.java:511)
+2023-07-18T09:09:16.027169404Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2023-07-18T09:09:16.027175974Z stdout F         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2023-07-18T09:09:16.027209635Z stdout F         at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18T09:09:16.027215715Z stdout F         at org.glassfish.javax.enterprise.concurrent@1.1.1.redhat-00001//org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:227)
+2023-07-18T09:09:16.027219275Z stdout F

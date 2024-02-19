@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PersonTest {
@@ -107,13 +106,13 @@ public class PersonTest {
         assertTrue(neitherAnd.test(p4));
 
         // as stream
-        List<Person> filtered = Stream.of(p1,p2,p3,p4).filter(neitherAnd).collect(Collectors.toList());
+        List<Person> filtered = Stream.of(p1,p2,p3,p4).filter(neitherAnd).toList();
         assertEquals(2, filtered.size());
         assertTrue(filtered.contains(p3));
         assertTrue(filtered.contains(p4));
 
         // as stream v2
-        List<Person> filtered_v2 = Stream.of(p1,p2,p3,p4).filter(validator).collect(Collectors.toList());
+        List<Person> filtered_v2 = Stream.of(p1,p2,p3,p4).filter(validator).toList();
         assertEquals(2, filtered_v2.size());
         assertTrue(filtered_v2.contains(p3));
         assertTrue(filtered_v2.contains(p4));

@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  python3-emo:
+    container_name: python3-emo
+    image: continuumio/anaconda3:latest
+    volumes:
+      - ..:/workspace:cached
